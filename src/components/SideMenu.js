@@ -5,8 +5,10 @@ import Fab from "@mui/material/Fab";
 import NavigationIcon from "@mui/icons-material/Navigation";
 import "../styles/SideMenu.css";
 import Drawer from "@mui/material/Drawer";
+import AppBar from "@mui/material/AppBar";
 import SpeedDial from "@mui/material/SpeedDial";
-
+import Toolbar from "@mui/material/Toolbar";
+import MenuIcon from "@mui/icons-material/Menu";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -14,7 +16,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import { Divider, Paper } from "@mui/material";
-
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 function SideMenu() {
@@ -59,11 +62,37 @@ function SideMenu() {
   }
 
   return (
-    <div className="NavFBtn">
-      <Fab onClick={toggleNav} color="primary" variant="extended">
+    <div className="navs">
+      <AppBar color="transparent">
+        <Toolbar variant="dense">
+          {/* <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "flex-end",
+            }} */}
+          {/* > */}
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Welcome
+          </Typography>
+
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+            onClick={toggleNav}
+          >
+            <MenuIcon />
+          </IconButton>
+          {/* </Box> */}
+        </Toolbar>
+      </AppBar>
+      {/* <Fab onClick={toggleNav} color="primary" variant="extended">
         <NavigationIcon sx={{ mr: 1 }} />
         Navigate<ArrowForwardIosIcon></ArrowForwardIosIcon>
-      </Fab>
+      </Fab> */}
 
       {/* use drawer to show nav */}
 
@@ -77,7 +106,7 @@ function SideMenu() {
           },
         }}
         variant="temporary"
-        anchor="left"
+        anchor="right"
         open={nav}
         onClose={toggleNav}
       >
