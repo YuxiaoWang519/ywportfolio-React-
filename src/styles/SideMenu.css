@@ -2,6 +2,28 @@
   margin-top: 90vh;
   margin-left: 1vw;
 }
-.navs {
-  margin: auto, auto;
+/* .navs {
+  margin-bottom: 4%;
+} */
+/* .intro {
+  margin-top: 4%;
+  background-color: coral;
+} */
+.introBg {
+  background-color: aqua;
+}
+.introD {
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  line-height: 4vh;
+}
+.intoT {
+  align-content: center;
+  justify-content: center;
 }

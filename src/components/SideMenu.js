@@ -62,59 +62,61 @@ function SideMenu() {
   }
 
   return (
-    <div className="navs">
-      <AppBar color="transparent">
-        <Toolbar variant="dense">
-          {/* <Box
+    <>
+      <div className="navs">
+        <AppBar color="transparent">
+          <Toolbar variant="dense">
+            {/* <Box
             sx={{
               display: "flex",
               justifyContent: "flex-end",
               alignItems: "flex-end",
             }} */}
-          {/* > */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Welcome
-          </Typography>
+            {/* > */}
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Welcome
+            </Typography>
 
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={toggleNav}
-          >
-            <MenuIcon />
-          </IconButton>
-          {/* </Box> */}
-        </Toolbar>
-      </AppBar>
-      {/* <Fab onClick={toggleNav} color="primary" variant="extended">
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              onClick={toggleNav}
+            >
+              <MenuIcon />
+            </IconButton>
+            {/* </Box> */}
+          </Toolbar>
+        </AppBar>
+        {/* <Fab onClick={toggleNav} color="primary" variant="extended">
         <NavigationIcon sx={{ mr: 1 }} />
         Navigate<ArrowForwardIosIcon></ArrowForwardIosIcon>
       </Fab> */}
 
-      {/* use drawer to show nav */}
+        {/* use drawer to show nav */}
 
-      <Drawer
-        sx={{
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
-            background:
-              "linear-gradient(90deg, rgb(250, 249, 249) 0%, rgb(231, 230, 233) 97%);",
-            elevation: "24",
-          },
-        }}
-        variant="temporary"
-        anchor="right"
-        open={nav}
-        onClose={toggleNav}
-      >
-        {/* <Paper className="navPaper" elevation={24}></Paper> */}
-        {navlist()}
-      </Drawer>
-      {/* use speeddial to show nav */}
-    </div>
+        <Drawer
+          sx={{
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              background:
+                "linear-gradient(90deg, rgb(250, 249, 249) 0%, rgb(231, 230, 233) 97%);",
+              elevation: "24",
+            },
+          }}
+          variant="temporary"
+          anchor="right"
+          open={nav}
+          onClose={toggleNav}
+        >
+          {/* <Paper className="navPaper" elevation={24}></Paper> */}
+          {navlist()}
+        </Drawer>
+        {/* use speeddial to show nav */}
+      </div>
+    </>
   );
 }
 
