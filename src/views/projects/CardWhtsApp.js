@@ -4,15 +4,16 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-
+import Story from "../../Images/Story.png";
 function CardWhatsApp() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: "30vw", background: "grey" }}>
       <CardActionArea>
         <CardMedia
+          sx={{ maxWidth: "100%" }}
           component="img"
-          height="140"
-          image="../../Images/Story.png"
+          height="300"
+          image={Story}
           alt="Create Group"
         />
         <CardContent>

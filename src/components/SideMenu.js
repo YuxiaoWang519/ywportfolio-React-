@@ -20,8 +20,40 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
+import Chip from "@mui/material/Chip";
+import { Button } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import CloseIcon from "@mui/icons-material/Close";
+import Snackbar from "@mui/material/Snackbar";
+
 function SideMenu() {
   const [nav, setNav] = React.useState(false);
+  const [clipBoard, setBoard] = React.useState(false);
+  const handleCopy = () => {
+    const el = document.createElement("input");
+    el.value = "wangyuxiao519@live.com";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    console.log(el);
+    setBoard(true);
+  };
+  const handleClose = () => {
+    setBoard(false);
+  };
+  const action = (
+    <>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </>
+  );
 
   const navlist = () => (
     <Box sx={{ backgroundColor: "" }}>
@@ -34,7 +66,7 @@ function SideMenu() {
             <ListItemText primary="Home"></ListItemText>
           </ListItemButton>
         </ListItem>
-        <Divider></Divider>
+        <Divider variant="inset"></Divider>
         <ListItem>
           <ListItemButton>
             <ListItemIcon>
@@ -43,16 +75,28 @@ function SideMenu() {
             <ListItemText primary="Projects"></ListItemText>
           </ListItemButton>
         </ListItem>
+
+        <Divider variant="inset"></Divider>
+        <ListItem>
+          <ListItemButton>
+            <ListItemIcon>
+              <ContactPageIcon></ContactPageIcon>
+            </ListItemIcon>
+            <ListItemText primary="Contact"></ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <Divider variant="middle">
+          <Chip label="Contact Info"></Chip>
+        </Divider>
+        <ListItem>
+          <ListItemButton onClick={handleCopy}>
+            <ListItemIcon>
+              <EmailIcon></EmailIcon>
+            </ListItemIcon>
+            <ListItemText primary="Email"></ListItemText>
+          </ListItemButton>
+        </ListItem>
       </List>
-      <Divider></Divider>
-      <ListItem>
-        <ListItemButton>
-          <ListItemIcon>
-            <ContactPageIcon></ContactPageIcon>
-          </ListItemIcon>
-          <ListItemText primary="Contact"></ListItemText>
-        </ListItemButton>
-      </ListItem>
     </Box>
   );
 
@@ -64,7 +108,7 @@ function SideMenu() {
   return (
     <>
       <div className="navs">
-        <AppBar color="transparent">
+        <AppBar color="">
           <Toolbar variant="dense">
             {/* <Box
             sx={{
@@ -114,6 +158,13 @@ function SideMenu() {
           {/* <Paper className="navPaper" elevation={24}></Paper> */}
           {navlist()}
         </Drawer>
+        <Snackbar
+          open={clipBoard}
+          autoHideDuration={3000}
+          onClose={handleClose}
+          message="Coppied to clickbord"
+          action={action}
+        />
         {/* use speeddial to show nav */}
       </div>
     </>
