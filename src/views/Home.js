@@ -35,11 +35,7 @@ function HomeView(props) {
             alignContent: "flex-start",
           }}
         >
-          <CardWhatsApp></CardWhatsApp>
-          <CardWhatsApp></CardWhatsApp>
-          <CardWhatsApp></CardWhatsApp>
-          <CardWhatsApp></CardWhatsApp>
-          <CardWhatsApp></CardWhatsApp>
+          <CardShows></CardShows>
         </Box>
       </Container>
     </>
