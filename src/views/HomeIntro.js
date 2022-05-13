@@ -13,7 +13,7 @@ function HomeIntro() {
 
     <Paper
       elevation={12}
-      sx={{ px: 0, height: "50vh", width: "100vw" }}
+      sx={{ px: 0, height: "50vh", width: "100%" }}
       className="introBg"
       style={{
         background:

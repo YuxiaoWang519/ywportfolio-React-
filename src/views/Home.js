@@ -15,24 +15,26 @@ function HomeView(props) {
   return (
     <>
       <CssBaseline />
-      <ElevationScroll {...props}>
-        <SideMenu></SideMenu>
-      </ElevationScroll>
-      <Toolbar />
+
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box>
+          <ElevationScroll {...props}>
+            <SideMenu></SideMenu>
+          </ElevationScroll>
+          <Toolbar disableGutters={true} />
           <HomeIntro></HomeIntro>
         </Box>
       </Container>
-      <Container>
-        {/* need to change to a list, imagelist,tab, or something with slide animation,
-        currently this is just a splaceholder */}
+      <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box
           sx={{
+            width: "100%",
             display: "flex",
             flexFlow: "row wrap",
             justifyContent: "space-evenly",
             alignContent: "flex-start",
+            background:
+              "linear-gradient(0deg, rgb(184, 184, 187) 0%, rgb(248, 248, 250) 100%)",
           }}
         >
           <CardShows></CardShows>
