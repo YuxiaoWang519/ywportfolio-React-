@@ -5,11 +5,16 @@ import HomeIntro from "./HomeIntro";
 import { Container, CssBaseline, Toolbar } from "@mui/material";
 import CardShows from "../components/CardShows";
 import CardWhatsApp from "./projects/CardWhtsApp";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 import "../styles/Home.css";
-function ElevationScroll(props) {
-  const { children, window } = props;
-  return React.cloneElement(children, { elavation: window ? 4 : 0 });
-}
+// function ElevationScroll(props) {
+//   const { children, window } = props;
+//   const trigger = useScrollTrigger({
+//     disableHysteresis: true,
+//     threshold: 0,
+//   });
+//   return React.cloneElement(children, { elavation: trigger ? 4 : 0 });
+// }
 
 function HomeView(props) {
   return (
@@ -18,9 +23,9 @@ function HomeView(props) {
 
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box>
-          <ElevationScroll {...props}>
-            <SideMenu></SideMenu>
-          </ElevationScroll>
+          {/* <ElevationScroll {...props}> */}
+          <SideMenu></SideMenu>
+          {/* </ElevationScroll> */}
           <Toolbar disableGutters={true} />
           <HomeIntro></HomeIntro>
         </Box>

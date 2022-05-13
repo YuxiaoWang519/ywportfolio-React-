@@ -17,7 +17,7 @@ function HomeIntro() {
       className="introBg"
       style={{
         background:
-          "linear-gradient(13deg, rgb(245, 241, 190) 0%, rgb(248, 247, 252) 100%)",
+          " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
       }}
     >
       <div className="introD">
