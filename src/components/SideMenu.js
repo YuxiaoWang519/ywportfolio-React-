@@ -25,18 +25,21 @@ import { Button } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import CloseIcon from "@mui/icons-material/Close";
 import Snackbar from "@mui/material/Snackbar";
+import copy from "copy-to-clipboard";
+import Tooltip from "@mui/material/Tooltip";
 
 function SideMenu() {
   const [nav, setNav] = React.useState(false);
   const [clipBoard, setBoard] = React.useState(false);
   const handleCopy = () => {
-    const el = document.createElement("input");
-    el.value = "wangyuxiao519@live.com";
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
-    console.log(el);
+    // const el = document.createElement("textarea");
+    // el.value = "wangyuxiao519@live.com";
+    // document.body.appendChild(el);
+    // el.select();
+    // document.execCommand("copy");
+    // document.body.removeChild(el);
+    // console.log(el);
+    copy("wangyuxiao519@live.com");
     setBoard(true);
   };
   const handleClose = () => {
@@ -89,12 +92,14 @@ function SideMenu() {
           <Chip label="Contact Info"></Chip>
         </Divider>
         <ListItem>
-          <ListItemButton onClick={handleCopy}>
-            <ListItemIcon>
-              <EmailIcon></EmailIcon>
-            </ListItemIcon>
-            <ListItemText primary="Email"></ListItemText>
-          </ListItemButton>
+          <Tooltip title="Click to copy">
+            <ListItemButton onClick={handleCopy}>
+              <ListItemIcon>
+                <EmailIcon></EmailIcon>
+              </ListItemIcon>
+              <ListItemText primary="Email"></ListItemText>
+            </ListItemButton>
+          </Tooltip>
         </ListItem>
       </List>
     </Box>
@@ -162,7 +167,7 @@ function SideMenu() {
           open={clipBoard}
           autoHideDuration={3000}
           onClose={handleClose}
-          message="Coppied to clickbord"
+          message="Coppied to clipbord"
           action={action}
         />
         {/* use speeddial to show nav */}
