@@ -53,39 +53,76 @@ function CardShows() {
     setAvtiveStep(step);
   };
   return (
-    <Box sx={{ maxWidth: "30vw", flexGrow: 1 }}>
-      <AutoPlaySwipeableViews
-        interval={5000}
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={activeStep}
-        onChangeIndex={handleStep}
-        enableMouseEvents
-      >
-        {cardsDeck.map((card, index) => (
-          <div key={index}>
-            <Card sx={{ maxWidth: "100%", background: "grey" }}>
-              <CardActionArea>
-                <CardMedia
-                  sx={{ maxWidth: "100%" }}
-                  component="img"
-                  height=""
-                  image={card.src}
-                  alt={card.alt}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {card.label}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {card.text}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
+    <>
+      <Box sx={{ maxWidth: "30vw", flexGrow: 1 }}>
+        <AutoPlaySwipeableViews
+          interval={5000}
+          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+          index={activeStep}
+          onChangeIndex={handleStep}
+          enableMouseEvents
+        >
+          {cardsDeck.map((card, index) => (
+            <div key={index}>
+              <Card sx={{ maxWidth: "100%", background: "grey" }}>
+                <CardActionArea>
+                  <CardMedia
+                    sx={{ maxWidth: "100%" }}
+                    component="img"
+                    height=""
+                    image={card.src}
+                    alt={card.alt}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {card.label}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {card.text}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </div>
+          ))}
+        </AutoPlaySwipeableViews>
+        {/* <MobileStepper
+          sx={{ opacity: "40%", width: "100vw  " }}
+          steps={maxSteps}
+          position="static"
+          activeStep={activeStep}
+          nextButton={
+            <Button
+              size="small"
+              onClick={handleNext}
+              disabled={activeStep === maxSteps - 1}
+            >
+              Next
+              {theme.direction === "rtl" ? (
+                <KeyboardArrowLeft />
+              ) : (
+                <KeyboardArrowRight />
+              )}
+            </Button>
+          }
+          backButton={
+            <Button
+              size="small"
+              onClick={hanldePrev}
+              disabled={activeStep === 0}
+            >
+              {theme.direction === "rtl" ? (
+                <KeyboardArrowRight />
+              ) : (
+                <KeyboardArrowLeft />
+              )}
+              Back
+            </Button>
+          }
+        ></MobileStepper> */}
+      </Box>
       <MobileStepper
+        sx={{ opacity: "80%", width: "100vw  " }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -114,7 +151,7 @@ function CardShows() {
           </Button>
         }
       ></MobileStepper>
-    </Box>
+    </>
   );
 }
 

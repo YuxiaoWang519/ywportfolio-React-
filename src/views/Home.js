@@ -5,7 +5,7 @@ import HomeIntro from "./HomeIntro";
 import { Container, CssBaseline, Toolbar } from "@mui/material";
 import CardShows from "../components/CardShows";
 import CardWhatsApp from "./projects/CardWhtsApp";
-
+import "../styles/Home.css";
 function ElevationScroll(props) {
   const { children, window } = props;
   return React.cloneElement(children, { elavation: window ? 4 : 0 });
@@ -27,6 +27,7 @@ function HomeView(props) {
       </Container>
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box
+          className="slideShow"
           sx={{
             width: "100%",
             display: "flex",
