@@ -1,5 +1,5 @@
 .slideShow {
-  animation: wave 10s infinite;
+  animation: wave 20s infinite;
   animation-direction: alternate;
 }
 @keyframes wave {
@@ -7,7 +7,7 @@
     background: #363636;
   }
   50% {
-    background: whitesmoke;
+    background: #c1c1c2;
   }
   100% {
     background: #363636;

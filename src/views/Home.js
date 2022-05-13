@@ -2,7 +2,7 @@ import React from "react";
 import SideMenu from "../components/SideMenu";
 import Box from "@mui/material/Box";
 import HomeIntro from "./HomeIntro";
-import { Container, CssBaseline, Toolbar } from "@mui/material";
+import { Container, CssBaseline, Toolbar, Typography } from "@mui/material";
 import CardShows from "../components/CardShows";
 import CardWhatsApp from "./projects/CardWhtsApp";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
@@ -44,6 +44,13 @@ function HomeView(props) {
           }}
         >
           <CardShows></CardShows>
+        </Box>
+      </Container>
+      <Container>
+        <Box>
+          <Typography>
+            <h3>footer area</h3>
+          </Typography>
         </Box>
       </Container>
     </>
