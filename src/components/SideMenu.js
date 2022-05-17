@@ -128,7 +128,11 @@ function SideMenu() {
               alignItems: "flex-end",
             }} */}
             {/* > */}
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, ml: "8%" }}
+            >
               Welcome
             </Typography>
 
@@ -176,7 +180,6 @@ function SideMenu() {
           message="Coppied to clipbord"
           action={action}
         />
-      
       </div>
     </>
   );
