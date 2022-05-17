@@ -1,4 +1,4 @@
-import { Grid, Stack } from "@mui/material";
+import { Grid, Stack, Tooltip } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import EmailIcon from "@mui/icons-material/Email";
@@ -45,26 +45,30 @@ function YWFooter() {
         </Grid>
         <Grid item xs={6}>
           <Stack spacing={5}>
-            <Box className="contactHover" onClick={handleCopy}>
-              <Stack direction="row" sx={{ alignItems: "center" }}>
-                <Avatar>
-                  <EmailIcon></EmailIcon>
-                </Avatar>
-                <Typography id="emailBox" sx={{ fontSize: "30px", ml: "1%" }}>
-                  wangyuxiao519@live.com
-                </Typography>
-              </Stack>
-            </Box>
-            <Box className="contactHover" onClick={handleCopy}>
-              <Stack direction="row" sx={{ alignItems: "center" }}>
-                <Avatar>
-                  <LocalPhoneIcon></LocalPhoneIcon>
-                </Avatar>
-                <Typography sx={{ fontSize: "30px", ml: "1%" }}>
-                  +1 (416) 276-6784
-                </Typography>
-              </Stack>
-            </Box>
+            <Tooltip title="Click to Copy" placement="bottom-start">
+              <Box className="contactHover" onClick={handleCopy}>
+                <Stack direction="row" sx={{ alignItems: "center" }}>
+                  <Avatar>
+                    <EmailIcon></EmailIcon>
+                  </Avatar>
+                  <Typography id="emailBox" sx={{ fontSize: "30px", ml: "1%" }}>
+                    wangyuxiao519@live.com
+                  </Typography>
+                </Stack>
+              </Box>
+            </Tooltip>
+            <Tooltip title="Click to Copy" placement="bottom-start">
+              <Box className="contactHover" onClick={handleCopy}>
+                <Stack direction="row" sx={{ alignItems: "center" }}>
+                  <Avatar>
+                    <LocalPhoneIcon></LocalPhoneIcon>
+                  </Avatar>
+                  <Typography sx={{ fontSize: "30px", ml: "1%" }}>
+                    +1 (416) 276-6784
+                  </Typography>
+                </Stack>
+              </Box>
+            </Tooltip>
           </Stack>
         </Grid>
       </Grid>
