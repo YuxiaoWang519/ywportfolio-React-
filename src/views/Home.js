@@ -2,11 +2,19 @@ import React from "react";
 import SideMenu from "../components/SideMenu";
 import Box from "@mui/material/Box";
 import HomeIntro from "./HomeIntro";
-import { Container, CssBaseline, Toolbar, Typography } from "@mui/material";
+import {
+  Avatar,
+  Container,
+  CssBaseline,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import CardShows from "../components/CardShows";
 import CardWhatsApp from "./projects/CardWhtsApp";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import "../styles/Home.css";
+import YWFooter from "./YWFooter";
 // function ElevationScroll(props) {
 //   const { children, window } = props;
 //   const trigger = useScrollTrigger({
@@ -30,6 +38,7 @@ function HomeView(props) {
           <HomeIntro></HomeIntro>
         </Box>
       </Container>
+
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box
           className="slideShow"
@@ -46,11 +55,14 @@ function HomeView(props) {
           <CardShows></CardShows>
         </Box>
       </Container>
-      <Container>
-        <Box>
-          <Typography>
-            <h3>footer area</h3>
-          </Typography>
+      <Container
+        id="contactAnchor"
+        maxWidth="false"
+        disableGutters={true}
+        sx={{ width: "100%", height: "20vh" }}
+      >
+        <Box sx={{ m: "5%" }}>
+          <YWFooter></YWFooter>
         </Box>
       </Container>
     </>

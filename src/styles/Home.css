@@ -13,3 +13,8 @@
     background: #363636;
   }
 }
+.contactHover :hover {
+  background: #dbdad9;
+  border-radius: 30px;
+  cursor: pointer;
+}

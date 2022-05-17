@@ -89,7 +89,13 @@ function SideMenu() {
           </ListItemButton>
         </ListItem>
         <Divider variant="middle">
-          <Chip label="Contact Info"></Chip>
+          <Chip
+            label="Contact Info"
+            component="a"
+            href="#contactAnchor"
+            onClick={toggleNav}
+            clickable
+          ></Chip>
         </Divider>
         <ListItem>
           <Tooltip title="Click to copy">
@@ -170,7 +176,7 @@ function SideMenu() {
           message="Coppied to clipbord"
           action={action}
         />
-        {/* use speeddial to show nav */}
+      
       </div>
     </>
   );
