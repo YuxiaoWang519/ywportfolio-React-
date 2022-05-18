@@ -1,0 +1,27 @@
+/* .tImg {
+  max-width: 100%;
+  height: auto;
+} */
+.imgFit {
+  object-fit: cover;
+  width: 30vw;
+  height: 100%;
+}
+.gridC {
+  overflow: hidden;
+  max-height: 40vh;
+}
+.intro {
+  height: 0;
+  background-color: aquamarine;
+  transform: translate(50%, 50%);
+}
+
+.cardAnimation {
+  height: 20vh;
+
+  transition: all 2s;
+}
+.cardAnimation:hover {
+  transform: translate(0, 200%);
+}

@@ -65,7 +65,7 @@ function CardShows() {
           {cardsDeck.map((card, index) => (
             <div key={index}>
               <Card sx={{ maxWidth: "100%", background: "#ffffff" }}>
-                <CardActionArea>
+                <CardActionArea >
                   <CardMedia
                     sx={{ maxWidth: "100%" }}
                     component="img"

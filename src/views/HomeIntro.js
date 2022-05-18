@@ -5,8 +5,20 @@ import "../styles/SideMenu.css";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import {
+  BrowserRouter,
+  Link,
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
 function HomeIntro() {
+  let navigate = useNavigate();
+  const toProjects = () => {
+    navigate("/Projects");
+  };
   return (
     //   <Paper elevation={9} sx={{ background: "grey" }}>
     //     2121
@@ -41,7 +53,11 @@ function HomeIntro() {
         <div className="introD">
           <h2>Yuxiao Wang</h2>
           <h3>Front-End developer</h3>
-          <Button sx={{ alignSelf: "center" }} variant="contained">
+          <Button
+            onClick={toProjects}
+            sx={{ alignSelf: "center" }}
+            variant="contained"
+          >
             Button here
           </Button>
         </div>
