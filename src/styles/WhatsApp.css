@@ -5,7 +5,10 @@
   align-items: center;
 }
 .lChatContent {
-  font-size: 3vh;
+  font-size: 2vh;
+}
+.contactContent {
+  font-size: 2vh;
 }
 .Content {
   display: flex;

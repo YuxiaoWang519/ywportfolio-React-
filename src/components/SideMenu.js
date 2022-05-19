@@ -27,8 +27,16 @@ import CloseIcon from "@mui/icons-material/Close";
 import Snackbar from "@mui/material/Snackbar";
 import copy from "copy-to-clipboard";
 import Tooltip from "@mui/material/Tooltip";
+import { useNavigate } from "react-router";
 
 function SideMenu() {
+  let navigate = useNavigate();
+  const toHome = () => {
+    navigate("/Home");
+  };
+  const toProjects = () => {
+    navigate("/Projects");
+  };
   const [nav, setNav] = React.useState(false);
   const [clipBoard, setBoard] = React.useState(false);
   const handleCopy = () => {
@@ -62,7 +70,7 @@ function SideMenu() {
     <Box sx={{ backgroundColor: "" }}>
       <List>
         <ListItem>
-          <ListItemButton>
+          <ListItemButton onClick={toHome}>
             <ListItemIcon>
               <HomeIcon></HomeIcon>
             </ListItemIcon>
@@ -72,7 +80,7 @@ function SideMenu() {
         <Divider variant="inset"></Divider>
         <ListItem>
           <ListItemButton>
-            <ListItemIcon>
+            <ListItemIcon onClick={toProjects}>
               <PlayCircleIcon></PlayCircleIcon>
             </ListItemIcon>
             <ListItemText primary="Projects"></ListItemText>
