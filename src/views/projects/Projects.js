@@ -31,7 +31,7 @@ function Projects() {
         container
         spacing={2}
         justifyContent="center"
-        sx={{ height: "40vh" }}
+        sx={{ mt: "30vh", height: "40vh" }}
       >
         <Grid item xs={3} className="gridC">
           {/* <Card sx={{ maxWidth: "30vw" }} className="cardAnimation">
@@ -52,12 +52,24 @@ function Projects() {
               </Typography>
             </CardContent>
           </Card> */}
-          <div className="intro">dwqiod</div>
+
           <Box className="cardAnimation">
+            <div className="intro">
+              <div className="introText">WhatsApp Redesign </div>
+            </div>
+
             <img src={Story} className="imgFit"></img>
           </Box>
         </Grid>
-        <Grid item xs={3}></Grid>
+        <Grid item xs={3} className="gridC">
+          <Box className="cardAnimation">
+            <div className="intro">
+              <div className="introText">WhatsApp Redesign </div>
+            </div>
+
+            <img src={Story} className="imgFit"></img>
+          </Box>
+        </Grid>
       </Grid>
       <Container
         id="contactAnchor"

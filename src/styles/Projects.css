@@ -4,8 +4,6 @@
 } */
 .imgFit {
   object-fit: cover;
-  width: 30vw;
-  height: 100%;
 }
 .gridC {
   overflow: hidden;
@@ -14,14 +12,20 @@
 .intro {
   height: 0;
   background-color: aquamarine;
-  transform: translate(50%, 50%);
+  height: 100%;
+  text-align: center;
+}
+.introText {
+  font-size: 40px;
+  transform: translate(0, 80%);
 }
 
 .cardAnimation {
-  height: 20vh;
+  margin-top: -100%;
+  height: 100%;
 
   transition: all 2s;
 }
 .cardAnimation:hover {
-  transform: translate(0, 200%);
+  transform: translate(0, 100%);
 }
