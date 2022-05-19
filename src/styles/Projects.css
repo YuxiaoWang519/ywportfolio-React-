@@ -27,5 +27,6 @@
   transition: all 2s;
 }
 .cardAnimation:hover {
+  cursor: pointer;
   transform: translate(0, 100%);
 }

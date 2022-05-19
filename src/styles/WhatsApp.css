@@ -1,0 +1,42 @@
+.wIntro {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.lChatContent {
+  font-size: 3vh;
+}
+.Content {
+  display: flex;
+
+  justify-content: center;
+}
+.imgFit {
+  max-height: 80vh;
+  object-fit: cover;
+}
+.colorPicker {
+  margin: 2vw;
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+  transition: all 0.5s;
+}
+.colorPicker:hover {
+  margin: 2vw;
+  border-radius: 50%;
+  transform: scale(1.5, 1.5);
+}
+.colorPicker01 {
+  background-color: #1e3932;
+}
+.colorPicker02 {
+  background-color: #24785c;
+}
+.colorPicker03 {
+  background-color: #f2d0ad;
+}
+.colorPicker04 {
+  background-color: #d4e9e2;
+}

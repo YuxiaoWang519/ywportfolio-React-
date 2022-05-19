@@ -15,8 +15,23 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import { useNavigate } from "react-router";
+import { WhatsApp } from "@mui/icons-material";
 function Projects() {
+  let navigate = useNavigate();
+  const toDetails = (e) => {
+    const identifier = e.target.id;
+    switch (identifier) {
+      case "whatsApp":
+        navigate("/Projects/WhatsApp");
+        break;
+
+      default:
+        break;
+    }
+
+    // navigate();
+  };
   return (
     <>
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
@@ -53,12 +68,12 @@ function Projects() {
             </CardContent>
           </Card> */}
 
-          <Box className="cardAnimation">
+          <Box className="cardAnimation" onClick={toDetails}>
             <div className="intro">
               <div className="introText">WhatsApp Redesign </div>
             </div>
 
-            <img src={Story} className="imgFit"></img>
+            <img id="whatsApp" src={Story} className="imgFit"></img>
           </Box>
         </Grid>
         <Grid item xs={3} className="gridC">

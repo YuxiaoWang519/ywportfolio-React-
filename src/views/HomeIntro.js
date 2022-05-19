@@ -58,7 +58,7 @@ function HomeIntro() {
             sx={{ alignSelf: "center" }}
             variant="contained"
           >
-            Button here
+            See my projects!
           </Button>
         </div>
       </Stack>
