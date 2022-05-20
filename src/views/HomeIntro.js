@@ -13,8 +13,16 @@ import {
   Navigate,
   useNavigate,
 } from "react-router-dom";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function HomeIntro() {
+  const btnEffect = {
+    color: "yellow",
+    ":hover": {
+      color: "red",
+    },
+  };
+
   let navigate = useNavigate();
   const toProjects = () => {
     navigate("/Projects");
@@ -55,16 +63,27 @@ function HomeIntro() {
           <h3>Front-End developer</h3>
           <Button
             onClick={toProjects}
-            sx={{ alignSelf: "center" }}
+            sx={{
+              alignSelf: "center",
+              background: "grey",
+              color: " #bfdfff ",
+            }}
             variant="contained"
+            color="success"
           >
-            See my projects!
+            Learn More
           </Button>
+          {/* <button className="introBtn">Learn More</button> */}
         </div>
       </Stack>
-      <Box sx={{ mx: "10%" }}>
+      <Box sx={{ mx: "20%" }}>
         <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          I'm enthusiastic about front end development in general. I believe in
+          simplicity and efficiency. Here are some of my works and some are
+          still in development.This site is built with React and Mui. I will
+          keep updating this site, if you are interested in me or my work.
+          Please don't hesitate to contact me.
+          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
           urna id volutpat lacus laoreet non curabitur. Aliquam id diam maecenas
           ultricies mi eget mauris pharetra et. Pulvinar sapien et ligula
@@ -75,7 +94,7 @@ function HomeIntro() {
           bibendum arcu vitae elementum curabitur vitae nunc sed velit.
           Facilisis leo vel fringilla est ullamcorper. Sem et tortor consequat
           id. Nisl nisi scelerisque eu ultrices. Porta nibh venenatis cras sed
-          felis eget.
+          felis eget. */}
         </Typography>
       </Box>
     </Paper>

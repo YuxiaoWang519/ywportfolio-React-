@@ -29,3 +29,15 @@
 .welcome:hover {
   cursor: pointer;
 }
+.introBtn {
+  align-self: center;
+  background-color: bisque;
+  border-radius: 50px;
+  font-size: 3vh;
+  width: 12vw;
+  height: 4vh;
+  color: aqua;
+}
+.introBtn:hover {
+  cursor: pointer;
+}

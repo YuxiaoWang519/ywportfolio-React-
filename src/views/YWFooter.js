@@ -34,6 +34,9 @@ function YWFooter() {
       </IconButton>
     </>
   );
+  let date = new Date();
+
+  console.log(date.toString());
   return (
     <>
       <Grid container spacing={2}>
@@ -70,6 +73,9 @@ function YWFooter() {
               </Box>
             </Tooltip>
           </Stack>
+        </Grid>
+        <Grid item xs={12}>
+          <p> &copy; Yuxiao Wang {date.toString()} </p>
         </Grid>
       </Grid>
       <Snackbar
