@@ -26,3 +26,6 @@
   align-content: center;
   justify-content: center;
 }
+.welcome:hover {
+  cursor: pointer;
+}

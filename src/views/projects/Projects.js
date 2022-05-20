@@ -18,20 +18,24 @@ import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router";
 import { WhatsApp } from "@mui/icons-material";
 function Projects() {
+  // let navigate = useNavigate();
+  // const toDetails = (e) => {
+  //   console.log(e);
+  //   const identifier = e.target.id;
+  //   switch (identifier) {
+  //     case "whatsApp":
+  //       navigate("/Projects/WhatsApp");
+  //       break;
+
+  //     default:
+  //       break;
+  //   }
   let navigate = useNavigate();
-  const toDetails = (e) => {
-    const identifier = e.target.id;
-    switch (identifier) {
-      case "whatsApp":
-        navigate("/Projects/WhatsApp");
-        break;
-
-      default:
-        break;
-    }
-
-    // navigate();
+  const toWhatsApp = () => {
+    navigate("/Projects/WhatsApp");
   };
+
+  // };
   return (
     <>
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
@@ -68,7 +72,7 @@ function Projects() {
             </CardContent>
           </Card> */}
 
-          <Box className="cardAnimation" onClick={toDetails}>
+          <Box className="cardAnimation" onClick={toWhatsApp}>
             <div className="intro">
               <div className="introText">WhatsApp Redesign </div>
             </div>

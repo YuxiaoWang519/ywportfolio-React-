@@ -137,9 +137,11 @@ function SideMenu() {
             }} */}
             {/* > */}
             <Typography
+              onClick={toHome}
               variant="h6"
               component="div"
               sx={{ flexGrow: 1, ml: "8%" }}
+              className="welcome"
             >
               Welcome
             </Typography>

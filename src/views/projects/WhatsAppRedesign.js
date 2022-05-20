@@ -14,6 +14,7 @@ import Contact02 from "../../Images/Contact02.png";
 import Contact03 from "../../Images/Contact03.png";
 import Settings01 from "../../Images/Settings01.png";
 import Settings02 from "../../Images/Settings02.png";
+import CreateGroup02 from "../../Images/CreateGroup02.png";
 import "../../styles/WhatsApp.css";
 
 function WhatsApp() {
@@ -226,18 +227,14 @@ function WhatsApp() {
             <Grid xs={12} item>
               <Box>
                 <Stack direction="row" spacing={30}>
-                  <img className="imgFit" src={Settings01} alt="chat page" />
+                  <img className="imgFit" src={CreateGroup02} alt="chat page" />
                   <div className="Content">
                     <h2>
-                      <h1>Setting --Categorize Contact </h1>
+                      <h1>Create Group </h1>
                       <br></br>
-                      Remeber the Categorize in contact page? Let's talk about
-                      it now. Do you find it annoying to find a person and add
-                      them to a chat group? No? What about you need to add all
-                      your colleges or all your high school friends? The feature
-                      contact Categorization allow you modify them together. Not
-                      getting it? No worries, let me show you what it can do in
-                      the next part.
+                      With the feature we talked above, now users can simply
+                      select a category and with one sigle tap,"Create Group",
+                      Boom, Done!
                       <br />
                     </h2>
                   </div>
