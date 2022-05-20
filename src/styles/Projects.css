@@ -4,10 +4,13 @@
 } */
 .imgFit {
   object-fit: cover;
+  width: 100%;
 }
 .gridC {
   overflow: hidden;
   max-height: 40vh;
+  background-color: blanchedalmond;
+  box-shadow: 5px 5px 28px -8px rgba(13, 13, 13, 1);
 }
 .intro {
   height: 0;
@@ -17,8 +20,8 @@
   display: block;
 }
 .introText {
-  font-size: 40px;
-  transform: translate(0, 80%);
+  font-size: 5vh;
+  transform: translate(0, 200%);
 }
 
 .cardAnimation {
@@ -29,5 +32,10 @@
 }
 .cardAnimation:hover {
   cursor: pointer;
-  transform: translate(0, 100%);
+  transform: translate(0, 120%);
+}
+.projectIntro {
+  text-align: center;
+  margin-bottom: 10vh;
+  color: bisque;
 }

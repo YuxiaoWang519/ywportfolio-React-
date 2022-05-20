@@ -46,14 +46,18 @@ function Projects() {
           <Toolbar disableGutters={true} />
         </Box>
       </Container>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        sx={{ mt: "30vh", height: "40vh" }}
-      >
-        <Grid item xs={3} className="gridC">
-          {/* <Card sx={{ maxWidth: "30vw" }} className="cardAnimation">
+      <Box sx={{ background: "grey", my: "2vh", py: "10vh" }}>
+        <div className="projectIntro">
+          <h1>List of projects</h1>
+          <p>feel free to check them out</p>
+        </div>
+        <Grid
+          container
+          justifyContent="space-evenly"
+          // sx={{ mt: "30vh", height: "40vh" }}
+        >
+          <Grid item xs={3} className="gridC">
+            {/* <Card sx={{ maxWidth: "30vw" }} className="cardAnimation">
             <CardMedia
               component="img"
               height="200px"
@@ -72,24 +76,25 @@ function Projects() {
             </CardContent>
           </Card> */}
 
-          <Box className="cardAnimation" onClick={toWhatsApp}>
-            <div className="intro">
-              <div className="introText">WhatsApp Redesign </div>
-            </div>
+            <Box className="cardAnimation" onClick={toWhatsApp}>
+              <div className="intro">
+                <div className="introText">WhatsApp Redesign </div>
+              </div>
 
-            <img id="whatsApp" src={Story} className="imgFit"></img>
-          </Box>
-        </Grid>
-        <Grid item xs={3} className="gridC">
-          <Box className="cardAnimation">
-            <div className="intro">
-              <div className="introText">WhatsApp Redesign </div>
-            </div>
+              <img id="whatsApp" src={Story} className="imgFit"></img>
+            </Box>
+          </Grid>
+          <Grid item xs={3} className="gridC">
+            <Box className="cardAnimation">
+              <div className="intro">
+                <div className="introText">WhatsApp Redesign </div>
+              </div>
 
-            <img src={Story} className="imgFit"></img>
-          </Box>
+              <img src={Story} className="imgFit"></img>
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
       <Container
         id="contactAnchor"
         maxWidth="false"
