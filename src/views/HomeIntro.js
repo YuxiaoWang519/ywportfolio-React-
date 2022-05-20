@@ -27,6 +27,9 @@ function HomeIntro() {
   const toProjects = () => {
     navigate("/Projects");
   };
+  const toAboutMe=()=>{
+    navigate("/AboutMe")
+  }
   return (
     //   <Paper elevation={9} sx={{ background: "grey" }}>
     //     2121
@@ -62,7 +65,7 @@ function HomeIntro() {
           <h2>Yuxiao Wang</h2>
           <h3>Front-End developer</h3>
           <Button
-            onClick={toProjects}
+            onClick={toAboutMe}
             sx={{
               alignSelf: "center",
               background: "grey",
