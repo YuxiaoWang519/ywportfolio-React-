@@ -15,24 +15,7 @@ function importAll(r) {
   return images;
 }
 
-//   const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
-
-//   <img src={images['doggy.png']} />
-
 function PhotoWall() {
-  // const [open, setOpen] = React.useState(false);
-  // const [fullWidth, setFullWidth] = React.useState(true);
-  // const [maxWidth, setMaxWidth] = React.useState("lg");
-  // const [imgSrc, setImgSrc] = React.useState(null);
-  // const handleOpen = (selected) => {
-  //   setImgSrc(selected);
-  //   setOpen(true);
-  // };
-
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
-
   const [pOpen, setpOpen] = React.useState(false);
   const [fullPWidth, setFullPWidth] = React.useState(true);
   const [maxPWidth, setMaxPWidth] = React.useState("lg");

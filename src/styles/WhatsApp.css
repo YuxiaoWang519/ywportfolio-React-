@@ -18,6 +18,10 @@
 .imgFit {
   max-height: 80vh;
   object-fit: cover;
+  transition: all 0.5s;
+}
+.imgFit:hover {
+  transform: scale(1.5, 1.5);
 }
 .colorPicker {
   margin: 2vw;
