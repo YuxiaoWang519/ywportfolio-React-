@@ -30,9 +30,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 import PhotoWall from "../../components/PhotoWall";
 function WhatsApp() {
   let navigate = useNavigate();
-  const toWhatsAppGallery = () => {
-    navigate("/Projects/WHatsApp/Gallery");
-  };
+  // const toWhatsAppGallery = () => {
+  //   navigate("/Projects/WHatsApp/Gallery");
+  // };
   const [open, setOpen] = React.useState(false);
   const [fullWidth, setFullWidth] = React.useState(true);
   const [maxWidth, setMaxWidth] = React.useState("lg");
