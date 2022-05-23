@@ -81,7 +81,7 @@ function Projects() {
                 <div className="introText">WhatsApp Redesign </div>
               </div>
 
-              <img id="whatsApp" src={Story} className="imgFit"></img>
+              <img id="whatsApp" src={Story} className="imgFits"></img>
             </Box>
           </Grid>
           <Grid item xs={3} className="gridC">
@@ -90,7 +90,7 @@ function Projects() {
                 <div className="introText">WhatsApp Redesign </div>
               </div>
 
-              <img src={Story} className="imgFit"></img>
+              <img src={Story} className="imgFits"></img>
             </Box>
           </Grid>
         </Grid>

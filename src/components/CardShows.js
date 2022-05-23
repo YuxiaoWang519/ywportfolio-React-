@@ -2,7 +2,7 @@ import { ImportExport } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
 import { number } from "prop-types";
 import React from "react";
-import CardWhatsApp from "../views/projects/CardWhtsApp";
+
 import { Box } from "@mui/system";
 import MobileStepper from "@mui/material/MobileStepper";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -65,7 +65,7 @@ function CardShows() {
           {cardsDeck.map((card, index) => (
             <div key={index}>
               <Card sx={{ maxWidth: "100%", background: "#ffffff" }}>
-                <CardActionArea >
+                <CardActionArea>
                   <CardMedia
                     sx={{ maxWidth: "100%" }}
                     component="img"
