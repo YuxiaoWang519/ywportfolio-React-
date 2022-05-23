@@ -128,9 +128,9 @@ function WhatsApp() {
                       Well, here we go.
                       <br></br>
                       This the chat setting, instead of drop box which is used
-                      in the official app, we created a new page for it. it is
+                      in the official app, we created a new page for it. It is
                       not only more visual enjoyable but also made it easier for
-                      user operate.
+                      user to operate.
                     </h2>
                   </div>
                 </Stack>
@@ -181,9 +181,8 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
-                  <img className="imgFit" src={Settings02} alt="chat page" />
-                  <div className="Content">
+                <Stack direction="row" spacing={10}>
+                  <div className="contactContent">
                     <h2>
                       <h1>Settings </h1>
                       <br></br>
@@ -200,12 +199,14 @@ function WhatsApp() {
                       <br />
                     </h2>
                   </div>
+                  <img className="imgFit" src={Settings02} alt="chat page" />
                 </Stack>
               </Box>
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack direction="row" spacing={10}>
+                  <img className="imgFit" src={Settings01} alt="chat page" />
                   <div className="Content">
                     <h2>
                       <h1>Setting --Categorize Contact </h1>
@@ -219,15 +220,13 @@ function WhatsApp() {
                       the next part.
                       <br />
                     </h2>
-                  </div>{" "}
-                  <img className="imgFit" src={Settings01} alt="chat page" />
+                  </div>
                 </Stack>
               </Box>
             </Grid>
             <Grid xs={12} item>
               <Box>
                 <Stack direction="row" spacing={30}>
-                  <img className="imgFit" src={CreateGroup02} alt="chat page" />
                   <div className="Content">
                     <h2>
                       <h1>Create Group </h1>
@@ -238,6 +237,7 @@ function WhatsApp() {
                       <br />
                     </h2>
                   </div>
+                  <img className="imgFit" src={CreateGroup02} alt="chat page" />
                 </Stack>
               </Box>
             </Grid>

@@ -21,7 +21,7 @@ function AboutMe() {
         maxWidth={false}
         sx={{ mx: "0", width: "100vw", background: "grey" }}
       >
-        <Box>
+        <Box >
           <Typography>
             Hi, I am Yuxiao. I'm a front end developer believed in simplicity
             and efficiency.
