@@ -15,6 +15,7 @@ import Contact03 from "../../Images/Contact03.png";
 import Settings01 from "../../Images/Settings01.png";
 import Settings02 from "../../Images/Settings02.png";
 import CreateGroup02 from "../../Images/CreateGroup02.png";
+import Story02 from "../../Images/Story02.png";
 import "../../styles/WhatsApp.css";
 import YWFooter from "../YWFooter";
 import { useNavigate } from "react-router";
@@ -25,6 +26,8 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
+
+import PhotoWall from "../../components/PhotoWall";
 function WhatsApp() {
   let navigate = useNavigate();
   const toWhatsAppGallery = () => {
@@ -257,13 +260,31 @@ function WhatsApp() {
                       With the feature we talked above, now users can simply
                       select a category and with one sigle tap,"Create Group",
                       Boom, Done!
+                    </h2>
+                  </div>
+                  <img className="imgFit" src={CreateGroup02} alt="chat page" />
+                </Stack>
+              </Box>
+            </Grid>
+            <Grid xs={12} item>
+              <Box>
+                <Stack direction="row" spacing={30}>
+                  <img className="imgFit" src={Story02} alt="chat page" />
+                  <div className="Content">
+                    <h2>
+                      <h1>Story</h1>
+                      <br></br>
+                      You might already noticed that there is a new "Story" tab.
+                      This is a new feature we added in order to improve
+                      WhatsApp user base. The idea is to make WHatsApp not only
+                      a tool to communicate but also where its users can share
+                      their life, idea and manymore.
                       <br />
                       <br />
                       Wanna see all the design picture?
                       <Button onClick={handleOpen}>CLick Here</Button>
                     </h2>
                   </div>
-                  <img className="imgFit" src={CreateGroup02} alt="chat page" />
                 </Stack>
               </Box>
             </Grid>
@@ -290,7 +311,9 @@ function WhatsApp() {
         onClose={handleClose}
       >
         <DialogTitle>PhotoGallery</DialogTitle>
-        <DialogContent></DialogContent>
+        <DialogContent>
+          <PhotoWall />
+        </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Close</Button>
         </DialogActions>
