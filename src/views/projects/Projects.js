@@ -17,6 +17,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router";
 import { WhatsApp } from "@mui/icons-material";
+import WelcomePage from "../../Images/WelcomePage.png";
 function Projects() {
   // let navigate = useNavigate();
   // const toDetails = (e) => {
@@ -81,7 +82,7 @@ function Projects() {
                 <div className="introText">WhatsApp Redesign </div>
               </div>
 
-              <img id="whatsApp" src={Story} className="imgFits"></img>
+              <img id="whatsApp" src={WelcomePage} className="imgFits"></img>
             </Box>
           </Grid>
           <Grid item xs={3} className="gridC">

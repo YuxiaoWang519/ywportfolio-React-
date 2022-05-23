@@ -18,7 +18,7 @@
 .imgFit {
   max-height: 80vh;
   object-fit: cover;
-  transition: all 0.5s;
+  transition: all 1s ease;
 }
 .imgFit:hover {
   transform: scale(1.5, 1.5);
