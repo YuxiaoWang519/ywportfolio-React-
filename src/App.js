@@ -6,6 +6,7 @@ import Home from "./views/Home";
 import Projects from "./views/projects/Projects";
 import WhatsApp from "./views/projects/WhatsAppRedesign";
 import AboutMe from "./views/AboutMe";
+
 function App() {
   return (
     <Routes>
@@ -13,6 +14,7 @@ function App() {
       <Route path="/Home" element={<Home />}></Route>
       <Route path="/Projects" element={<Projects />}></Route>
       <Route path="/Projects/WhatsApp" element={<WhatsApp />}></Route>
+
       <Route path="/AboutMe" element={<AboutMe />}></Route>
     </Routes>
   );

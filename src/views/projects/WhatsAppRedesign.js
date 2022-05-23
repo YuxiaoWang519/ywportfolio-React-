@@ -1,4 +1,4 @@
-import { Container, Grid, Stack, Avatar } from "@mui/material";
+import { Container, Grid, Stack, Avatar, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import SideMenu from "../../components/SideMenu";
@@ -16,8 +16,31 @@ import Settings01 from "../../Images/Settings01.png";
 import Settings02 from "../../Images/Settings02.png";
 import CreateGroup02 from "../../Images/CreateGroup02.png";
 import "../../styles/WhatsApp.css";
+import YWFooter from "../YWFooter";
+import { useNavigate } from "react-router";
+
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
 
 function WhatsApp() {
+  let navigate = useNavigate();
+  const toWhatsAppGallery = () => {
+    navigate("/Projects/WHatsApp/Gallery");
+  };
+  const [open, setOpen] = React.useState(false);
+  const [fullWidth, setFullWidth] = React.useState(true);
+  const [maxWidth, setMaxWidth] = React.useState("lg");
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
@@ -235,15 +258,43 @@ function WhatsApp() {
                       select a category and with one sigle tap,"Create Group",
                       Boom, Done!
                       <br />
+                      <br />
+                      Wanna see all the design picture?
+                      <Button onClick={handleOpen}>CLick Here</Button>
                     </h2>
                   </div>
                   <img className="imgFit" src={CreateGroup02} alt="chat page" />
                 </Stack>
               </Box>
             </Grid>
+
+            <Grid item xs={12}>
+              <Container
+                id="contactAnchor"
+                maxWidth="false"
+                disableGutters={true}
+                sx={{ width: "100%", height: "20vh" }}
+              >
+                <Box sx={{ m: "5%" }}>
+                  <YWFooter></YWFooter>
+                </Box>
+              </Container>
+            </Grid>
           </Grid>
         </Box>
       </Container>
+      <Dialog
+        fullWidth={fullWidth}
+        maxWidth={maxWidth}
+        open={open}
+        onClose={handleClose}
+      >
+        <DialogTitle>PhotoGallery</DialogTitle>
+        <DialogContent></DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 }
