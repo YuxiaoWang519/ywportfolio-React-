@@ -37,6 +37,9 @@ function SideMenu() {
   const toProjects = () => {
     navigate("/Projects");
   };
+  const toAbout=()=>{
+    navigate("/AboutMe")
+  }
   const [nav, setNav] = React.useState(false);
   const [clipBoard, setBoard] = React.useState(false);
   const handleCopy = () => {
@@ -89,11 +92,11 @@ function SideMenu() {
 
         <Divider variant="inset"></Divider>
         <ListItem>
-          <ListItemButton>
+          <ListItemButton onClick={toAbout}>
             <ListItemIcon>
               <ContactPageIcon></ContactPageIcon>
             </ListItemIcon>
-            <ListItemText primary="Contact"></ListItemText>
+            <ListItemText primary="AboutMe"></ListItemText>
           </ListItemButton>
         </ListItem>
         <Divider variant="middle">

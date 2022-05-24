@@ -1,9 +1,30 @@
-import { Container, Grid, Typography, Stack } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Typography,
+  Stack,
+  Avatar,
+  Paper,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import SideMenu from "../components/SideMenu";
 import { Toolbar } from "@mui/material";
 import YWFooter from "./YWFooter";
+import AILogo from "../Icons/AdobeIlustrator.jpg";
+import AXDLogo from "../Icons/AdobeXD.png";
+import BootStrapLogo from "../Icons/Bootstrap.png";
+import CSharpLogo from "../Icons/Csharp.jpg";
+import Css3Logo from "../Icons/Css3.png";
+import HtmlLogo from "../Icons/HTML.jpg";
+import JavaLogo from "../Icons/Java.jpg";
+import JQueryLogo from "../Icons/Jquery.jpg";
+import JsLogo from "../Icons/JS.png";
+import PSLogo from "../Icons/photoshop.jpg";
+import PythonLogo from "../Icons/Pythom.jpg";
+import ReactLogo from "../Icons/React.jpg";
+import SqlLogo from "../Icons/SQL.jpg";
+import vueLogo from "../Icons/vue.jpg";
 
 function AboutMe() {
   return (
@@ -48,11 +69,90 @@ function AboutMe() {
             alignItems="stretch"
             spacing={3}
           >
-            <Box>1</Box>
-            <Box>2</Box>
-            <Box>3</Box>
-            <Box>4</Box>
-            <Box>5</Box>
+            <Box>
+              <Paper >
+                <Avatar alt="htmllogo" src={HtmlLogo}></Avatar>
+                <Typography>HTML</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="cssLogo" src={Css3Logo}></Avatar>
+                <Typography>CSS3</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="jsLogo" src={JsLogo}></Avatar>
+                <Typography>JavaScript</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="Java" src={JavaLogo}></Avatar>
+                <Typography>Java</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="python" src={PythonLogo}></Avatar>
+                <Typography>Python</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="c#" src={CSharpLogo}></Avatar>
+                <Typography>C#</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="sql" src={SqlLogo}></Avatar>
+                <Typography>SQL</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="vue" src={vueLogo}></Avatar>
+                <Typography>Vue2/3</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="Jquery" src={JQueryLogo}></Avatar>
+                <Typography>JQuery</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="React" src={ReactLogo}></Avatar>
+                <Typography>React</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="bootstrap" src={BootStrapLogo}></Avatar>
+                <Typography>BootStrap</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="photoshop" src={PSLogo}></Avatar>
+                <Typography>PhotoShop</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="adobeillustrator" src={AILogo}></Avatar>
+                <Typography>Adobe Illustrator</Typography>
+              </Paper>
+            </Box>
+            <Box>
+              <Paper>
+                <Avatar alt="Adobe Xd" src={AXDLogo}></Avatar>
+                <Typography>Adobe XD</Typography>
+              </Paper>
+            </Box>
           </Stack>
         </Box>
       </Container>
