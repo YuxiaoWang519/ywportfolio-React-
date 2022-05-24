@@ -246,7 +246,6 @@ function AboutMe() {
                       pt: "5vh",
                       textAlign: "center",
                       height: "15vh",
-
                       lineHeight: "20vh",
                     }}
                   >
