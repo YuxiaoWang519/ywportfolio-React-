@@ -21,7 +21,7 @@
   transition: all 1s ease;
 }
 .imgFit:hover {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
 }
 .colorPicker {
   margin: 2vw;

@@ -79,8 +79,8 @@ function SideMenu() {
         </ListItem>
         <Divider variant="inset"></Divider>
         <ListItem>
-          <ListItemButton>
-            <ListItemIcon onClick={toProjects}>
+          <ListItemButton onClick={toProjects}>
+            <ListItemIcon>
               <PlayCircleIcon></PlayCircleIcon>
             </ListItemIcon>
             <ListItemText primary="Projects"></ListItemText>
