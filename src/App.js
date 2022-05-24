@@ -6,10 +6,12 @@ import Home from "./views/Home";
 import Projects from "./views/projects/Projects";
 import WhatsApp from "./views/projects/WhatsAppRedesign";
 import AboutMe from "./views/AboutMe";
+import NotFound from "./views/404";
 
 function App() {
   return (
     <Routes>
+      <Route path="*" element={<NotFound />} />
       <Route exact path="/" element={<Navigate to="/Home" />}></Route>
       <Route path="/Home" element={<Home />}></Route>
       <Route path="/Projects" element={<Projects />}></Route>

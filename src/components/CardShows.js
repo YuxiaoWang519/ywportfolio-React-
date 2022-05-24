@@ -17,6 +17,7 @@ import Story from "../Images/Story.png";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import Chat01 from "../Images/Chat01.png";
+import { useNavigate } from "react-router";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const cardsDeck = [
   {
@@ -34,6 +35,10 @@ const cardsDeck = [
 ];
 
 function CardShows() {
+  const navigate = useNavigate();
+  const toProject = () => {
+    navigate("/Projects");
+  };
   console.log(Story);
   // maybe use imagelist? or something with same style
   // const cardsDeck = [CardWhatsApp, CardWhatsApp];
@@ -64,7 +69,10 @@ function CardShows() {
         >
           {cardsDeck.map((card, index) => (
             <div key={index}>
-              <Card sx={{ maxWidth: "100%", background: "#ffffff" }}>
+              <Card
+                onClick={toProject}
+                sx={{ maxWidth: "100%", background: "#ffffff" }}
+              >
                 <CardActionArea>
                   <CardMedia
                     sx={{ maxWidth: "100%" }}
