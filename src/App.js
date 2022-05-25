@@ -13,7 +13,7 @@ function App() {
     <Routes>
       <Route path="*" element={<NotFound />} />
       <Route exact path="/" element={<Navigate to="/Home" />}></Route>
-      <Route path="ywportfolio-React-/" element={<Home />}></Route>
+      <Route path="/Home" element={<Home />}></Route>
       <Route path="/Projects" element={<Projects />}></Route>
       <Route path="/Projects/WhatsApp" element={<WhatsApp />}></Route>
 
