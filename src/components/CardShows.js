@@ -18,17 +18,18 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import Chat01 from "../Images/Chat01.png";
 import { useNavigate } from "react-router";
+import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const cardsDeck = [
   {
     label: "WhatsApp Redesign Project",
-    src: Story,
+    src: SliderWhatsApp,
     alt: "Story",
     text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
   },
   {
     label: "WhatsApp Redesign Project",
-    src: Chat01,
+    src: SliderWhatsApp,
     alt: "Story",
     text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
   },
@@ -59,7 +60,7 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "30vw", flexGrow: 1 }}>
+      <Box sx={{ maxWidth: "60vw", flexGrow: 1 }}>
         <AutoPlaySwipeableViews
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
