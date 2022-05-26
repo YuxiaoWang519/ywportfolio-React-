@@ -18,7 +18,7 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import Chat01 from "../Images/Chat01.png";
 import { useNavigate } from "react-router";
-import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png"
+import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const cardsDeck = [
   {
@@ -131,7 +131,7 @@ function CardShows() {
         ></MobileStepper> */}
       </Box>
       <MobileStepper
-        sx={{ opacity: "80%", width: "100vw  " }}
+        sx={{ bgcolor: "#81f1d6", opacity: "80%", width: "100vw  " }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
