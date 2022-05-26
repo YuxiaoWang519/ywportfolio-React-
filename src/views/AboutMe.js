@@ -507,19 +507,16 @@ function AboutMe() {
         </Accordion>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>
-             Education
-            </Typography>
+            <Typography>Education</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                Consestoga college
+                Consestoga College
               </AccordionSummary>
               <AccordionDetails>
                 IT Innovation and Design(ITID) 2019-current
               </AccordionDetails>
-
             </Accordion>
           </AccordionDetails>
         </Accordion>
