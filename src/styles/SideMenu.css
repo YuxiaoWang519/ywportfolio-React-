@@ -27,6 +27,9 @@
   align-content: center;
   justify-content: center;
 }
+.welcome {
+  font-weight: bolder !important;
+}
 .welcome:hover {
   cursor: pointer;
 }
