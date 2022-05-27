@@ -91,8 +91,8 @@ function HomeIntro() {
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
-          keep updating this site, if you are interested in me or my work.
-          Please don't hesitate to contact me.
+          keep updating this site. If you are interested in me or my work,
+          please don't hesitate to contact me.
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
           urna id volutpat lacus laoreet non curabitur. Aliquam id diam maecenas
