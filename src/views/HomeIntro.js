@@ -5,6 +5,7 @@ import "../styles/SideMenu.css";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import BG01Grey from "../SliderImg/BG01Grey.jpg";
 import {
   BrowserRouter,
   Link,
@@ -27,9 +28,9 @@ function HomeIntro() {
   const toProjects = () => {
     navigate("/Projects");
   };
-  const toAboutMe=()=>{
-    navigate("/AboutMe")
-  }
+  const toAboutMe = () => {
+    navigate("/AboutMe");
+  };
   return (
     //   <Paper elevation={9} sx={{ background: "grey" }}>
     //     2121
@@ -40,10 +41,11 @@ function HomeIntro() {
       elevation={12}
       sx={{ px: 0, height: "80vh", width: "100%" }}
       className="introBg"
-      style={{
-        background:
-          " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
-      }}
+      // style={{
+      //   background:
+      //     " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
+      // }}
+      style={{ backgroundImage: `url(${BG01Grey})`, backgroundSize: "cover" }}
     >
       <Stack direction="row">
         <div>
@@ -80,7 +82,7 @@ function HomeIntro() {
         </div>
       </Stack>
       <Box sx={{ mx: "20%" }}>
-        <Typography>
+        <Typography sx={{color:" #025474"}}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
