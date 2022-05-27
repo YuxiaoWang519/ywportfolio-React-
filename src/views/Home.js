@@ -59,9 +59,9 @@ function HomeView(props) {
         id="contactAnchor"
         maxWidth="false"
         disableGutters={true}
-        sx={{ width: "100%", height: "20vh" }}
+        sx={{ maxWidth: "100vw", background: "grey" }}
       >
-        <Box sx={{ m: "5%" }}>
+        <Box sx={{ pt: "5%" }}>
           <YWFooter></YWFooter>
         </Box>
       </Container>

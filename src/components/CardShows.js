@@ -3,6 +3,9 @@ import { useTheme } from "@mui/material/styles";
 import { number } from "prop-types";
 import React from "react";
 
+//how to customize?
+import StepConnector from "@mui/material/StepConnector";
+
 import { Box } from "@mui/system";
 import MobileStepper from "@mui/material/MobileStepper";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -140,6 +143,7 @@ function CardShows() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
+            sx={{ color: "bisque" }}
           >
             Next
             {theme.direction === "rtl" ? (

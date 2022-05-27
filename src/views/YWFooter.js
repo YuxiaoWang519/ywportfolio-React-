@@ -39,7 +39,7 @@ function YWFooter() {
   console.log(date.toString());
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid sx={{ mx: 0, width: "100%" }} container spacing={2}>
         <Grid item xs={6}>
           <Typography sx={{ fontSize: "30px" }}>
             Thank you for scolling down here. If you are interested in me or my
