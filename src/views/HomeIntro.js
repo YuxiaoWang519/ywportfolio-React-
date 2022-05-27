@@ -45,7 +45,12 @@ function HomeIntro() {
       //   background:
       //     " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
       // }}
-      style={{ backgroundImage: `url(${BG01Grey})`, backgroundSize: "cover" }}
+
+      style={{
+        backgroundImage: `url(${BG01Grey})`,
+        backgroundSize: "cover",
+        opacity: "80%",
+      }}
     >
       <Stack direction="row">
         <div>
@@ -64,8 +69,8 @@ function HomeIntro() {
         </div>
 
         <div className="introD">
-          <h2>Yuxiao Wang</h2>
-          <h3>Front-End developer</h3>
+          <h1>Yuxiao Wang</h1>
+          <h2>Front-End developer</h2>
           <Button
             onClick={toAboutMe}
             sx={{
@@ -82,7 +87,7 @@ function HomeIntro() {
         </div>
       </Stack>
       <Box sx={{ mx: "20%" }}>
-        <Typography sx={{color:" #025474"}}>
+        <Typography sx={{ color: " #025474", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
