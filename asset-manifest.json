@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ywportfolio-React-/static/css/main.a2a0d5e8.css",
-    "main.js": "/ywportfolio-React-/static/js/main.f78b86ec.js",
+    "main.css": "/ywportfolio-React-/static/css/main.7da42557.css",
+    "main.js": "/ywportfolio-React-/static/js/main.2fc82c0e.js",
     "static/media/BG01Grey.jpg": "/ywportfolio-React-/static/media/BG01Grey.c3f3ca1bffbf0204d7cd.jpg",
     "static/media/SliderWhatsApp.png": "/ywportfolio-React-/static/media/SliderWhatsApp.94dc9cd445185065e928.png",
     "static/media/Video Call.png": "/ywportfolio-React-/static/media/Video Call.26cd32cfd27818d4859d.png",
@@ -43,11 +43,11 @@
     "static/media/SQL.jpg": "/ywportfolio-React-/static/media/SQL.f6b5a92e4d3ab079224f.jpg",
     "static/media/photoshop.jpg": "/ywportfolio-React-/static/media/photoshop.0ae7540aa58a39129f81.jpg",
     "index.html": "/ywportfolio-React-/index.html",
-    "main.a2a0d5e8.css.map": "/ywportfolio-React-/static/css/main.a2a0d5e8.css.map",
-    "main.f78b86ec.js.map": "/ywportfolio-React-/static/js/main.f78b86ec.js.map"
+    "main.7da42557.css.map": "/ywportfolio-React-/static/css/main.7da42557.css.map",
+    "main.2fc82c0e.js.map": "/ywportfolio-React-/static/js/main.2fc82c0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a0d5e8.css",
-    "static/js/main.f78b86ec.js"
+    "static/css/main.7da42557.css",
+    "static/js/main.2fc82c0e.js"
   ]
 }
