@@ -38,7 +38,6 @@ function AboutMe() {
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
           {/* </ElevationScroll> */}
-          <Toolbar disableGutters={true} />
         </Box>
       </Container>
       <Container

@@ -26,7 +26,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 
-
 import PhotoWall from "../../components/PhotoWall";
 function WhatsApp() {
   let navigate = useNavigate();
@@ -51,7 +50,6 @@ function WhatsApp() {
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
           {/* </ElevationScroll> */}
-          <Toolbar disableGutters={true} />
         </Box>
       </Container>
       <Container

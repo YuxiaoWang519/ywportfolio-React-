@@ -34,7 +34,7 @@ function HomeView(props) {
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
           {/* </ElevationScroll> */}
-          <Toolbar disableGutters={true} />
+
           <HomeIntro></HomeIntro>
         </Box>
       </Container>
