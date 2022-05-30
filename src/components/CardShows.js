@@ -134,7 +134,15 @@ function CardShows() {
         ></MobileStepper> */}
       </Box>
       <MobileStepper
-        sx={{ bgcolor: "#81f1d6", opacity: "80%", width: "100vw  " }}
+        variant="dots"
+        sx={{
+          bgcolor: "#06c39a",
+          opacity: "80%",
+          width: "100vw  ",
+          "& .MuiMobileStepper-dotActive": {
+            bgcolor: "bisque",
+          },
+        }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -143,7 +151,7 @@ function CardShows() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            sx={{ color: "bisque" }}
+            sx={{ color: "bisque", pr: "18vw" }}
           >
             Next
             {theme.direction === "rtl" ? (
@@ -154,7 +162,12 @@ function CardShows() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={hanldePrev} disabled={activeStep === 0}>
+          <Button
+            size="small"
+            onClick={hanldePrev}
+            disabled={activeStep === 0}
+            sx={{ color: "bisque", pl: "18vw" }}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
