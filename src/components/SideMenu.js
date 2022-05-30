@@ -131,8 +131,11 @@ function SideMenu() {
     <>
       <div className="navs">
         {/* backdropFilter: "blur(50px)"  */}
-        <AppBar color="" sx={{ opacity: "80%", backdropFilter: "blur(100px)" }}>
-          <Toolbar sx={{ height: "9vh" }} variant="dense">
+        <AppBar color="" sx={{ opacity: "85%" }}>
+          <Toolbar
+            sx={{ height: "9vh", backdropFilter: "blur(2px)" }}
+            variant="dense"
+          >
             {/* <Box
             sx={{
               display: "flex",
@@ -166,7 +169,7 @@ function SideMenu() {
         <Toolbar
           variant="dense"
           disableGutters={true}
-          sx={{ height: "9vh", minHeight: "0px" }}
+          sx={{ height: "9vh", minHeight: "0px", filter: "blur(50px)" }}
         />
         {/* <Fab onClick={toggleNav} color="primary" variant="extended">
         <NavigationIcon sx={{ mr: 1 }} />
