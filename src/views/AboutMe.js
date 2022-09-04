@@ -505,7 +505,7 @@ function AboutMe() {
             </Grid>
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>
              Education
