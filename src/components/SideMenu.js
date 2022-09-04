@@ -37,9 +37,9 @@ function SideMenu() {
   const toProjects = () => {
     navigate("/Projects");
   };
-  const toAbout=()=>{
-    navigate("/AboutMe")
-  }
+  const toAbout = () => {
+    navigate("/AboutMe");
+  };
   const [nav, setNav] = React.useState(false);
   const [clipBoard, setBoard] = React.useState(false);
   const handleCopy = () => {
@@ -130,8 +130,12 @@ function SideMenu() {
   return (
     <>
       <div className="navs">
-        <AppBar color="">
-          <Toolbar variant="dense">
+        {/* backdropFilter: "blur(50px)"  */}
+        <AppBar color="" sx={{ opacity: "85%" }}>
+          <Toolbar
+            sx={{ height: "9vh", backdropFilter: "blur(2px)" }}
+            variant="dense"
+          >
             {/* <Box
             sx={{
               display: "flex",
@@ -162,6 +166,11 @@ function SideMenu() {
             {/* </Box> */}
           </Toolbar>
         </AppBar>
+        <Toolbar
+          variant="dense"
+          disableGutters={true}
+          sx={{ height: "9vh", minHeight: "0px", filter: "blur(50px)" }}
+        />
         {/* <Fab onClick={toggleNav} color="primary" variant="extended">
         <NavigationIcon sx={{ mr: 1 }} />
         Navigate<ArrowForwardIosIcon></ArrowForwardIosIcon>

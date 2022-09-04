@@ -5,6 +5,7 @@ import "../styles/SideMenu.css";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import BG01Grey from "../SliderImg/BG01Grey.jpg";
 import {
   BrowserRouter,
   Link,
@@ -27,9 +28,9 @@ function HomeIntro() {
   const toProjects = () => {
     navigate("/Projects");
   };
-  const toAboutMe=()=>{
-    navigate("/AboutMe")
-  }
+  const toAboutMe = () => {
+    navigate("/AboutMe");
+  };
   return (
     //   <Paper elevation={9} sx={{ background: "grey" }}>
     //     2121
@@ -40,9 +41,15 @@ function HomeIntro() {
       elevation={12}
       sx={{ px: 0, height: "80vh", width: "100%" }}
       className="introBg"
+      // style={{
+      //   background:
+      //     " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
+      // }}
+
       style={{
-        background:
-          " linear-gradient(293deg, rgb(255, 253, 253) 0%, rgb(199, 199, 201) 100%)",
+        backgroundImage: `url(${BG01Grey})`,
+        backgroundSize: "cover",
+        opacity: "80%",
       }}
     >
       <Stack direction="row">
@@ -62,8 +69,8 @@ function HomeIntro() {
         </div>
 
         <div className="introD">
-          <h2>Yuxiao Wang</h2>
-          <h3>Front-End developer</h3>
+          <h1>Yuxiao Wang</h1>
+          <h2>Front-End developer</h2>
           <Button
             onClick={toAboutMe}
             sx={{
@@ -80,12 +87,12 @@ function HomeIntro() {
         </div>
       </Stack>
       <Box sx={{ mx: "20%" }}>
-        <Typography>
+        <Typography sx={{ color: " #025474", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
-          keep updating this site, if you are interested in me or my work.
-          Please don't hesitate to contact me.
+          keep updating this site. If you are interested in me or my work,
+          please don't hesitate to contact me.
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
           urna id volutpat lacus laoreet non curabitur. Aliquam id diam maecenas

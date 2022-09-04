@@ -44,10 +44,9 @@ function Projects() {
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
           {/* </ElevationScroll> */}
-          <Toolbar disableGutters={true} />
         </Box>
       </Container>
-      <Box sx={{ background: "grey", my: "2vh", py: "10vh" }}>
+      <Box sx={{ background: "grey", py: "10vh" }}>
         <div className="projectIntro">
           <h1>List of projects</h1>
           <p>feel free to check them out</p>

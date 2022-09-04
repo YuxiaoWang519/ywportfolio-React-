@@ -1,5 +1,5 @@
 .slideShow {
-  animation: wave 20s infinite;
+  animation: wave 10s infinite;
   animation-direction: alternate;
 }
 @keyframes wave {

@@ -13,6 +13,7 @@
   background-color: aqua;
 }
 .introD {
+  color: #025474;
   margin: auto;
   width: 50%;
   height: 50vh;
@@ -25,6 +26,9 @@
 .intoT {
   align-content: center;
   justify-content: center;
+}
+.welcome {
+  font-weight: bolder !important;
 }
 .welcome:hover {
   cursor: pointer;

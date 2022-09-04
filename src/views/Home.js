@@ -34,7 +34,7 @@ function HomeView(props) {
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
           {/* </ElevationScroll> */}
-          <Toolbar disableGutters={true} />
+
           <HomeIntro></HomeIntro>
         </Box>
       </Container>
@@ -59,9 +59,9 @@ function HomeView(props) {
         id="contactAnchor"
         maxWidth="false"
         disableGutters={true}
-        sx={{ width: "100%", height: "20vh" }}
+        sx={{ maxWidth: "100vw", background: "rgba(138, 138, 138, 0.2)" }}
       >
-        <Box sx={{ m: "5%" }}>
+        <Box sx={{ pt: "5%" }}>
           <YWFooter></YWFooter>
         </Box>
       </Container>

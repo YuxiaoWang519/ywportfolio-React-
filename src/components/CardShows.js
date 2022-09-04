@@ -3,6 +3,9 @@ import { useTheme } from "@mui/material/styles";
 import { number } from "prop-types";
 import React from "react";
 
+//how to customize?
+import StepConnector from "@mui/material/StepConnector";
+
 import { Box } from "@mui/system";
 import MobileStepper from "@mui/material/MobileStepper";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -18,7 +21,7 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import Chat01 from "../Images/Chat01.png";
 import { useNavigate } from "react-router";
-import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png"
+import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const cardsDeck = [
   {
@@ -131,7 +134,15 @@ function CardShows() {
         ></MobileStepper> */}
       </Box>
       <MobileStepper
-        sx={{ opacity: "80%", width: "100vw  " }}
+        variant="dots"
+        sx={{
+          bgcolor: "#06c39a",
+          opacity: "80%",
+          width: "100vw  ",
+          "& .MuiMobileStepper-dotActive": {
+            bgcolor: "bisque",
+          },
+        }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -140,6 +151,7 @@ function CardShows() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
+            sx={{ color: "bisque", pr: "18vw" }}
           >
             Next
             {theme.direction === "rtl" ? (
@@ -150,7 +162,12 @@ function CardShows() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={hanldePrev} disabled={activeStep === 0}>
+          <Button
+            size="small"
+            onClick={hanldePrev}
+            disabled={activeStep === 0}
+            sx={{ color: "bisque", pl: "18vw" }}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
