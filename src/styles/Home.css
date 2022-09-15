@@ -13,8 +13,14 @@
     background: #363636;
   }
 }
+.contactHover{
+  width:  80%;
+  
+}
 .contactHover :hover {
   background: #dbdad9;
   border-radius: 30px;
   cursor: pointer;
+  color: black;
+  
 }

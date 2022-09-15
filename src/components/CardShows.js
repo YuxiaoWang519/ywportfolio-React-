@@ -63,7 +63,7 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "60vw", flexGrow: 1 }}>
+      <Box sx={{ maxWidth: "90vw", flexGrow: 1 }}>
         <AutoPlaySwipeableViews
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -138,7 +138,7 @@ function CardShows() {
         sx={{
           bgcolor: "#06c39a",
           opacity: "80%",
-          width: "100vw  ",
+          width: "90vw  ",
           "& .MuiMobileStepper-dotActive": {
             bgcolor: "bisque",
           },
@@ -151,7 +151,7 @@ function CardShows() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            sx={{ color: "bisque", pr: "18vw" }}
+            sx={{ color: "bisque", pr: "2vw" }}
           >
             Next
             {theme.direction === "rtl" ? (
@@ -166,7 +166,7 @@ function CardShows() {
             size="small"
             onClick={hanldePrev}
             disabled={activeStep === 0}
-            sx={{ color: "bisque", pl: "18vw" }}
+            sx={{ color: "bisque", pl: "2vw" }}
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />

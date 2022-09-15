@@ -131,7 +131,7 @@ function SideMenu() {
     <>
       <div className="navs">
         {/* backdropFilter: "blur(50px)"  */}
-        <AppBar color="" sx={{ opacity: "85%" }}>
+        <AppBar color="" sx={{ height:"9vh", opacity: "85%" }}>
           <Toolbar
             sx={{ height: "9vh", backdropFilter: "blur(2px)" }}
             variant="dense"
@@ -147,7 +147,7 @@ function SideMenu() {
               onClick={toHome}
               variant="h6"
               component="div"
-              sx={{ flexGrow: 1, ml: "8%" }}
+              sx={{ flexGrow: 1, ml: "10%" }}
               className="welcome"
             >
               Welcome
@@ -158,7 +158,7 @@ function SideMenu() {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              sx={{ mr: "10% "}}
               onClick={toggleNav}
             >
               <MenuIcon />

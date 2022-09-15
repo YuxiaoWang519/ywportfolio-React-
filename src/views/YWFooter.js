@@ -39,14 +39,14 @@ function YWFooter() {
   console.log(date.toString());
   return (
     <>
-      <Grid sx={{ mx: 0, width: "100%" }} container spacing={2}>
-        <Grid item xs={6}>
-          <Typography sx={{ fontSize: "30px" }}>
-            Thank you for scolling down here. If you are interested in me or my
+      <Grid sx={{ mx: 0, width: "100%"}} container spacing={2}>
+        <Grid item xs={12} md={6}>
+          <Typography sx={{color:"grey  ", fontSize: "2.5vw" }}>
+            Thank you for scrolling down here. If you are interested in me or my
             work, feel free to contact me!
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Stack spacing={5}>
             <Tooltip title="Click to Copy" placement="bottom-start">
               <Box className="contactHover" onClick={handleCopy}>
@@ -54,7 +54,7 @@ function YWFooter() {
                   <Avatar>
                     <EmailIcon></EmailIcon>
                   </Avatar>
-                  <Typography id="emailBox" sx={{ fontSize: "30px", ml: "1%" }}>
+                  <Typography  sx={{color:"#d6d4d4", fontSize: "30px", ml: "1%" }}>
                     wangyuxiao519@live.com
                   </Typography>
                 </Stack>
@@ -66,7 +66,7 @@ function YWFooter() {
                   <Avatar>
                     <LocalPhoneIcon></LocalPhoneIcon>
                   </Avatar>
-                  <Typography sx={{ fontSize: "30px", ml: "1%" }}>
+                  <Typography sx={{ color:"#d6d4d4",fontSize: "30px", ml: "1%" }}>
                     +1 (416) 276-6784
                   </Typography>
                 </Stack>

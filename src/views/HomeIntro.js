@@ -39,7 +39,7 @@ function HomeIntro() {
 
     <Paper
       elevation={12}
-      sx={{ px: 0, height: "80vh", width: "100%" }}
+      sx={{ px: 0, height: "100vh", width: "90%" ,mt:"0",ml:"5%"}}
       className="introBg"
       // style={{
       //   background:
@@ -47,13 +47,14 @@ function HomeIntro() {
       // }}
 
       style={{
-        backgroundImage: `url(${BG01Grey})`,
+        // backgroundImage: `url(${BG01Grey})`,
+        backgroundColor:"black",
         backgroundSize: "cover",
-        opacity: "80%",
+        opacity: "90%",
       }}
     >
-      <Stack direction="row">
-        <div>
+      {/* <Stack direction="row"> */}
+        {/* <div>
           <Avatar
             alt="Yuxiao Wang"
             src=""
@@ -66,7 +67,7 @@ function HomeIntro() {
               height: "30vh",
             }}
           ></Avatar>
-        </div>
+        </div> */}
 
         <div className="introD">
           <h1>Yuxiao Wang</h1>
@@ -85,9 +86,9 @@ function HomeIntro() {
           </Button>
           {/* <button className="introBtn">Learn More</button> */}
         </div>
-      </Stack>
-      <Box sx={{ mx: "20%" }}>
-        <Typography sx={{ color: " #025474", fontSize: "20px" }}>
+      {/* </Stack> */}
+      <Box className="introT" sx={{ mx: "10%" , mt:"10vh"}}>
+        <Typography sx={{ color: " grey", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will

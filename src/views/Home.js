@@ -2,6 +2,7 @@ import React from "react";
 import SideMenu from "../components/SideMenu";
 import Box from "@mui/material/Box";
 import HomeIntro from "./HomeIntro";
+import {Helmet} from "react-helmet"
 import {
   Avatar,
   Container,
@@ -27,6 +28,12 @@ import YWFooter from "./YWFooter";
 function HomeView(props) {
   return (
     <>
+      <div>
+      <Helmet>
+        <style>{"body { background: black;  }"}</style>
+      </Helmet>
+      
+    </div>
       <CssBaseline />
 
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
@@ -43,8 +50,9 @@ function HomeView(props) {
         <Box
           className="slideShow"
           sx={{
-            width: "100%",
+            width: "90%",
             display: "flex",
+            ml:"5%",
             flexFlow: "row wrap",
             justifyContent: "space-evenly",
             alignContent: "flex-start",
@@ -59,7 +67,7 @@ function HomeView(props) {
         id="contactAnchor"
         maxWidth="false"
         disableGutters={true}
-        sx={{ maxWidth: "100vw", background: "rgba(138, 138, 138, 0.2)" }}
+        sx={{ maxWidth: "90vw", background: "black" }}
       >
         <Box sx={{ pt: "5%" }}>
           <YWFooter></YWFooter>

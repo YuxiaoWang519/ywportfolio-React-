@@ -13,19 +13,25 @@
   background-color: aqua;
 }
 .introD {
-  color: #025474;
+  color: white;
   margin: auto;
-  width: 50%;
+  /* width: 50%; */
   height: 50vh;
-  display: flex;
+  padding-left: 10%;
+  padding-top: 10vh;
+  font-size: 2vw;
+  /* display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-content: center;
+  align-content: center; */
+}
+.introD h1{
+  margin-top: 0;
 }
 .intoT {
-  align-content: center;
-  justify-content: center;
+  
+  font-size: 1vw;
 }
 .welcome {
   font-weight: bolder !important;
