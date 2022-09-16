@@ -136,7 +136,7 @@ function CardShows() {
       <MobileStepper
         variant="dots"
         sx={{
-          bgcolor: "#06c39a",
+          bgcolor: "black",
           opacity: "80%",
           width: "90vw  ",
           "& .MuiMobileStepper-dotActive": {

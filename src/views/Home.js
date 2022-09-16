@@ -30,7 +30,7 @@ function HomeView(props) {
     <>
       <div>
       <Helmet>
-        <style>{"body { background: black;  }"}</style>
+        <style>{"body { background: black;}"}</style>
       </Helmet>
       
     </div>

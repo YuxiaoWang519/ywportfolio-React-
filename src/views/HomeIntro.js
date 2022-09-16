@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import BG01Grey from "../SliderImg/BG01Grey.jpg";
+import bgCover from "../Images/abstract-modified.png"
 import {
   BrowserRouter,
   Link,
@@ -47,8 +48,8 @@ function HomeIntro() {
       // }}
 
       style={{
-        // backgroundImage: `url(${BG01Grey})`,
-        backgroundColor:"black",
+        backgroundImage: `url(${bgCover})`,
+        // backgroundColor:"black",
         backgroundSize: "cover",
         opacity: "90%",
       }}
@@ -87,7 +88,7 @@ function HomeIntro() {
           {/* <button className="introBtn">Learn More</button> */}
         </div>
       {/* </Stack> */}
-      <Box className="introT" sx={{ mx: "10%" , mt:"10vh"}}>
+      <Box className="introT" sx={{ mx: "10%" , mt:"5vw"}}>
         <Typography sx={{ color: " grey", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
