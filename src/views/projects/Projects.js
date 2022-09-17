@@ -17,7 +17,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router";
 import { WhatsApp } from "@mui/icons-material";
-import WelcomePage from "../../Images/WelcomePage.png";
+import WelcomePage from "../../Backgrounds/whatsApp.png";
+import {Helmet} from "react-helmet"
 function Projects() {
   // let navigate = useNavigate();
   // const toDetails = (e) => {
@@ -39,6 +40,13 @@ function Projects() {
   // };
   return (
     <>
+
+    <div>
+      <Helmet>
+        <style>{"body { background: black;}"}</style>
+      </Helmet>
+      
+    </div>
       <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box>
           {/* <ElevationScroll {...props}> */}
@@ -46,7 +54,7 @@ function Projects() {
           {/* </ElevationScroll> */}
         </Box>
       </Container>
-      <Box sx={{ background: "grey", py: "10vh" }}>
+      <Box sx={{ background: "black", py: "10vh" }}>
         <div className="projectIntro">
           <h1>List of projects</h1>
           <p>feel free to check them out</p>
@@ -93,15 +101,26 @@ function Projects() {
               <img src={Story} className="imgFits"></img>
             </Box>
           </Grid>
+          <Grid item xs={3} className="gridC">
+            <Box className="cardAnimation">
+              <div className="intro">
+                <div className="introText">WhatsApp Redesign </div>
+              </div>
+
+              <img src={Story} className="imgFits"></img>
+            </Box>
+          </Grid>
+          
+          
         </Grid>
       </Box>
       <Container
         id="contactAnchor"
         maxWidth="false"
         disableGutters={true}
-        sx={{ mt: "20vh", width: "100%", height: "20vh" }}
+        sx={{ maxWidth: "90vw", background: "black" }}
       >
-        <Box sx={{ m: "5%" }}>
+        <Box sx={{ pt: "5%" }}>
           <YWFooter></YWFooter>
         </Box>
       </Container>

@@ -160,7 +160,7 @@ function AboutMe() {
         </Box>
       </Container> */}
       <Container sx={{ mt: "5vh" }}>
-        <Accordion sx={{ bgcolor: "#a7a9ac" }}>
+        <Accordion defaultExpanded="true" sx={{ bgcolor: "#a7a9ac" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>Skill Set</Typography>
           </AccordionSummary>

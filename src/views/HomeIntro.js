@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import BG01Grey from "../SliderImg/BG01Grey.jpg";
-import bgCover from "../Images/abstract-modified.png"
+import bgCover from "../Backgrounds/abstract-modified.png"
 import {
   BrowserRouter,
   Link,

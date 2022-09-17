@@ -3,36 +3,45 @@
   height: auto;
 } */
 .imgFits {
-  object-fit: contain;
+  
+  object-fit: cover;
+  aspect-ratio: 1/1 ;
   width: 100%;
+  /* height:40vw */
+ 
+ 
+  
 }
 .gridC {
+  aspect-ratio: 1/1 ;
   overflow: hidden;
-  max-height: 40vh;
-  background-color: blanchedalmond;
+  /* max-height: 40vw; */
+  /* background-color: blanchedalmond; */
   box-shadow: 5px 5px 28px -8px rgba(13, 13, 13, 1);
 }
 .intro {
-  height: 0;
-  background-color: aquamarine;
+  aspect-ratio: 1/1 ;
+  background-color: black;
   height: 100%;
   text-align: center;
   display: block;
 }
 .introText {
-  font-size: 5vh;
-  transform: translate(0, 200%);
+  font-size: 3vw;
+  color: bisque;
+  padding-top: 7vw;
+  /* transform: translate(0, 200%); */
 }
 
 .cardAnimation {
-  margin-top: -100%;
-  height: 100%;
+  margin-top: -25vw;
+  /* height: 40w; */
 
   transition: all 2s;
 }
 .cardAnimation:hover {
   cursor: pointer;
-  transform: translate(0, 120%);
+  transform: translate(0, 25vw);
 }
 .projectIntro {
   text-align: center;
