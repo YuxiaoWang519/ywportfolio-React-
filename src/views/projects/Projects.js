@@ -19,6 +19,8 @@ import { useNavigate } from "react-router";
 import { WhatsApp } from "@mui/icons-material";
 import WelcomePage from "../../Backgrounds/whatsApp.png";
 import {Helmet} from "react-helmet"
+import LoginSquare from "../../Nangang/loginSquare.png"
+import HomeSquare from "../../WechatMIni/Home01Square.jpg"
 function Projects() {
   // let navigate = useNavigate();
   // const toDetails = (e) => {
@@ -62,6 +64,7 @@ function Projects() {
         <Grid
           container
           justifyContent="space-evenly"
+          spacing={1}
           // sx={{ mt: "30vh", height: "40vh" }}
         >
           <Grid item xs={3} className="gridC">
@@ -77,7 +80,7 @@ function Projects() {
                 WhatsApp Redesign Project
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                WhatsApp redesign proect aimed to improve its user experience.
+                WhatsApp redesign project aimed to improve its user experience.
                 The project focused on the design aspect, making improvement in
                 terms of new visual design and new potential functions.
               </Typography>
@@ -95,21 +98,25 @@ function Projects() {
           <Grid item xs={3} className="gridC">
             <Box className="cardAnimation">
               <div className="intro">
-                <div className="introText">WhatsApp Redesign </div>
+                <div className="introText">NanGang Supply Inventory Management System</div>
               </div>
 
-              <img src={Story} className="imgFits"></img>
+              <img src={LoginSquare} className="imgFits"></img>
             </Box>
           </Grid>
           <Grid item xs={3} className="gridC">
             <Box className="cardAnimation">
               <div className="intro">
-                <div className="introText">WhatsApp Redesign </div>
+                <div className="introText">Mini Project for University Anniversary</div>
               </div>
 
-              <img src={Story} className="imgFits"></img>
+              <img src={HomeSquare} className="imgFits"></img>
             </Box>
           </Grid>
+
+          
+
+          
           
           
         </Grid>
