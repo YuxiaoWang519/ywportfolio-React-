@@ -5,4 +5,12 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
+ 
+}
+.dialogFitLarge{
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: 90vw;
+
 }

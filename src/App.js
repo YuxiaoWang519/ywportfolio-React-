@@ -7,6 +7,8 @@ import Projects from "./views/projects/Projects";
 import WhatsApp from "./views/projects/WhatsAppRedesign";
 import AboutMe from "./views/AboutMe";
 import NotFound from "./views/404";
+import NanGang from "./views/projects/NanGang";
+import { NoTransfer } from "@mui/icons-material";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Route path="/Home" element={<Home />}></Route>
       <Route path="/Projects" element={<Projects />}></Route>
       <Route path="/Projects/WhatsApp" element={<WhatsApp />}></Route>
+      <Route path="/Projects/NanGang" element={<NanGang />}></Route>
 
       <Route path="/AboutMe" element={<AboutMe />}></Route>
     </Routes>

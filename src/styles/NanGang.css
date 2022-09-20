@@ -1,0 +1,10 @@
+.nangangIntro{
+    padding-left:10vw;
+    padding-right: 10vw;
+    padding-bottom: 20vh;
+}
+.videoIntro{
+    max-width: 80vw;
+    z-index: 1;
+    margin-top: -15vh;
+}

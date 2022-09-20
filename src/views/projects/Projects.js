@@ -38,7 +38,9 @@ function Projects() {
   const toWhatsApp = () => {
     navigate("/Projects/WhatsApp");
   };
-
+  const toNanGang =()=>{
+    navigate("/Projects/NanGang")
+  }
   // };
   return (
     <>
@@ -92,11 +94,11 @@ function Projects() {
                 <div className="introText">WhatsApp Redesign </div>
               </div>
 
-              <img id="whatsApp" src={WelcomePage} className="imgFits"></img>
+              <img id="whatsApp" src={WelcomePage} className="imgFits"></img> 
             </Box>
           </Grid>
           <Grid item xs={3} className="gridC">
-            <Box className="cardAnimation">
+            <Box className="cardAnimation" onClick={toNanGang}>
               <div className="intro">
                 <div className="introText">NanGang Supply Inventory Management System</div>
               </div>

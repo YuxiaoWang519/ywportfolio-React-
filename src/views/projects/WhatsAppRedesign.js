@@ -35,7 +35,7 @@ function WhatsApp() {
   const [open, setOpen] = React.useState(false);
   const [fullWidth, setFullWidth] = React.useState(true);
   const [maxWidth, setMaxWidth] = React.useState("lg");
-  const handleOpen = () => {
+  const handleOpen = () => {  
     setOpen(true);
   };
 
@@ -55,7 +55,7 @@ function WhatsApp() {
       <Container
         disableGutters={true}
         maxWidth="false"
-        sx={{ Width: "100vw", px: "0", mx: "0", background: "#dadada" }}
+        sx={{ Width: "100vw", px: "0", mx: "0",pt:"10vh", background: "#dadada" }}
       >
         <Box sx={{ mx: "10vw", height: "80vh" }}>
           <Grid container rowSpacing={5}>
@@ -66,7 +66,7 @@ function WhatsApp() {
                   <div className="wIntro">
                     <h2>
                       <h1>Welcome </h1>
-                      To WhatsApp Redesign Project. It aimed to imporve overall
+                      WhatsApp Redesign Project. It aimed to imporve overall
                       user experience. It is a group project made during
                       College. We redesigned the application in terms of visual
                       effect and functionality.
