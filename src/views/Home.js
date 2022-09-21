@@ -16,6 +16,9 @@ import CardWhatsApp from "./projects/CardWhtsApp";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import "../styles/Home.css";
 import YWFooter from "./YWFooter";
+
+
+
 // function ElevationScroll(props) {
 //   const { children, window } = props;
 //   const trigger = useScrollTrigger({
@@ -43,6 +46,7 @@ function HomeView(props) {
           {/* </ElevationScroll> */}
 
           <HomeIntro></HomeIntro>
+         
         </Box>
       </Container>
 
@@ -50,14 +54,14 @@ function HomeView(props) {
         <Box
           className="slideShow"
           sx={{
-            width: "90%",
+            width: "70%",
             display: "flex",
-            ml:"5%",
+            ml:"15%",
+            
             flexFlow: "row wrap",
             justifyContent: "space-evenly",
             alignContent: "flex-start",
-            background:
-              "linear-gradient(0deg, rgb(184, 184, 187) 0%, rgb(248, 248, 250) 100%)",
+          
           }}
         >
           <CardShows></CardShows>

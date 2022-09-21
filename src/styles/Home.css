@@ -4,13 +4,13 @@
 }
 @keyframes wave {
   0% {
-    background: #363636;
+    background: #000000;
   }
   50% {
-    background: #c1c1c2;
+    background: #03253a;
   }
   100% {
-    background: #363636;
+    background: #000000;
   }
 }
 .contactHover{

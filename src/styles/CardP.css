@@ -1,0 +1,42 @@
+
+
+
+.tText{
+    margin: auto !important;
+    font-weight: bold !important;
+    font-size: 3vw !important;
+}
+/* .CardContainer:hover{
+    animation: lightit 2s ease; 
+    cursor: pointer;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes lightit {
+    0% {
+        filter:brightness(100%);
+      }
+     
+      100% {
+        filter:brightness(200%);
+      }
+
+    
+} */
+.CardContainer{
+    transition: all 10s ease-out;
+
+    -moz-transition: all 10s ease-out; 
+    -o-transition:all 10s ease-out ;
+    -webkit-transition:all 10s ease-out ;
+}
+.CardContainer:hover{
+    cursor: pointer;
+    transition: filter 1s ease-in;
+
+    filter: brightness(200%);
+    -moz-filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+    
+}

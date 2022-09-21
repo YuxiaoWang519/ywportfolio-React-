@@ -63,7 +63,7 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "90vw", flexGrow: 1 }}>
+      <Box sx={{ maxWidth: "70vw", flexGrow: 1 }}>
         <AutoPlaySwipeableViews
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}

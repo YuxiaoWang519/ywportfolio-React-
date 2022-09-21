@@ -7,6 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import BG01Grey from "../SliderImg/BG01Grey.jpg";
 import bgCover from "../Backgrounds/abstract-modified.png"
+import CardToProjects from "../components/CardToProject"
 import {
   BrowserRouter,
   Link,
@@ -51,7 +52,7 @@ function HomeIntro() {
         backgroundImage: `url(${bgCover})`,
         // backgroundColor:"black",
         backgroundSize: "cover",
-        opacity: "90%",
+        opacity: "100%",
       }}
     >
       {/* <Stack direction="row"> */}
@@ -88,27 +89,17 @@ function HomeIntro() {
           {/* <button className="introBtn">Learn More</button> */}
         </div>
       {/* </Stack> */}
-      <Box className="introT" sx={{ mx: "10%" , mt:"5vw"}}>
+      <Box className="introT" sx={{ mx: "5vw  " , mt:"5vw"}}>
         <Typography sx={{ color: " grey", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
           keep updating this site. If you are interested in me or my work,
           please don't hesitate to contact me.
-          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis
-          urna id volutpat lacus laoreet non curabitur. Aliquam id diam maecenas
-          ultricies mi eget mauris pharetra et. Pulvinar sapien et ligula
-          ullamcorper. Vivamus at augue eget arcu dictum varius duis. Mauris
-          commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Lorem
-          ipsum dolor sit amet consectetur adipiscing elit duis tristique.
-          Porttitor massa id neque aliquam vestibulum morbi blandit. Malesuada
-          bibendum arcu vitae elementum curabitur vitae nunc sed velit.
-          Facilisis leo vel fringilla est ullamcorper. Sem et tortor consequat
-          id. Nisl nisi scelerisque eu ultrices. Porta nibh venenatis cras sed
-          felis eget. */}
+       
         </Typography>
       </Box>
+      <CardToProjects></CardToProjects>
     </Paper>
   );
 }

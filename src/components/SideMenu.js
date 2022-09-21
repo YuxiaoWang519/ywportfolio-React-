@@ -147,7 +147,7 @@ function SideMenu() {
               onClick={toHome}
               variant="h6"
               component="div"
-              sx={{ flexGrow: 1, ml: "10%" }}
+              sx={{ flexGrow: 1, ml: "5vw" }}
               className="welcome"
             >
               Welcome
@@ -158,7 +158,7 @@ function SideMenu() {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: "10% "}}
+              sx={{ mr: "5vw "}}
               onClick={toggleNav}
             >
               <MenuIcon />
