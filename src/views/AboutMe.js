@@ -519,6 +519,15 @@ function AboutMe() {
             </Accordion>
           </AccordionDetails>
         </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Experience</Typography>
+
+          </AccordionSummary>
+          <AccordionDetails>
+           Front-end Intern, Penbo Group, Mar 2022- Aug 2022
+          </AccordionDetails>
+        </Accordion>
       </Container>
 
       <Container

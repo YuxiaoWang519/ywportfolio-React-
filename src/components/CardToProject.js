@@ -16,9 +16,9 @@ export default function CardToProjects() {
         minWidth: '260px',
         gap: 2,
         background: ' linear-gradient(45deg, rgba(4,4,4,1) 0%, rgba(48,75,80,1) 45%, rgba(10,134,159,1) 100%);',
-        width:"95%",
-        ml:"5%",
-        mt:"5vw"
+        width:"100%",
+        
+        
         
       }}
     >
@@ -52,7 +52,7 @@ export default function CardToProjects() {
           writingMode: 'vertical-rl',
           textAlign: 'center',
           fontSize: '0.5vw',
-          fontWeight: 'xl2',
+          fontWeight: 'xl2',  
           letterSpacing: '1px',
           textTransform: 'uppercase',
         }}

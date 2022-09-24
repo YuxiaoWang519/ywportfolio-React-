@@ -9,7 +9,7 @@ import AboutMe from "./views/AboutMe";
 import NotFound from "./views/404";
 import NanGang from "./views/projects/NanGang";
 import { NoTransfer } from "@mui/icons-material";
-
+import Anniversary from "./views/projects/Anniversary";
 function App() {
   return (
     <Routes>
@@ -19,7 +19,7 @@ function App() {
       <Route path="/Projects" element={<Projects />}></Route>
       <Route path="/Projects/WhatsApp" element={<WhatsApp />}></Route>
       <Route path="/Projects/NanGang" element={<NanGang />}></Route>
-
+      <Route path="/Projects/Anniversary" element={<Anniversary />}></Route>
       <Route path="/AboutMe" element={<AboutMe />}></Route>
     </Routes>
   );

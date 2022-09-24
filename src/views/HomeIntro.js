@@ -90,7 +90,7 @@ function HomeIntro() {
         </div>
       {/* </Stack> */}
       <Box className="introT" sx={{ mx: "5vw  " , mt:"5vw"}}>
-        <Typography sx={{ color: " grey", fontSize: "20px" }}>
+        <Typography  sx={{ color: " grey", fontSize: "20px" }}>
           I'm enthusiastic about front end development in general. I believe in
           simplicity and efficiency. Here are some of my works and some are
           still in development.This site is built with React and Mui. I will
@@ -99,7 +99,10 @@ function HomeIntro() {
        
         </Typography>
       </Box>
-      <CardToProjects></CardToProjects>
+      <Box sx={{width:"84.3vw",ml:"5vw",mt:"3vw"}} onClick={toProjects}>
+        <CardToProjects ></CardToProjects>
+      </Box>
+      
     </Paper>
   );
 }

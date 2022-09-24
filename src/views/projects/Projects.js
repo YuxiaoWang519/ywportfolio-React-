@@ -21,6 +21,7 @@ import WelcomePage from "../../Backgrounds/whatsApp.png";
 import {Helmet} from "react-helmet"
 import LoginSquare from "../../Nangang/loginSquare.png"
 import HomeSquare from "../../WechatMIni/Home01Square.jpg"
+import Anniversary from "./Anniversary";
 function Projects() {
   // let navigate = useNavigate();
   // const toDetails = (e) => {
@@ -40,6 +41,9 @@ function Projects() {
   };
   const toNanGang =()=>{
     navigate("/Projects/NanGang")
+  };
+  const toAnniversary =()=>{
+    navigate("/Projects/Anniversary")
   }
   // };
   return (
@@ -107,7 +111,7 @@ function Projects() {
             </Box>
           </Grid>
           <Grid item xs={3} className="gridC">
-            <Box className="cardAnimation">
+            <Box className="cardAnimation" onClick={toAnniversary}>
               <div className="intro">
                 <div className="introText">Mini Project for University Anniversary</div>
               </div>

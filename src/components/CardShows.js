@@ -29,6 +29,7 @@ const cardsDeck = [
     src: SliderWhatsApp,
     alt: "Story",
     text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
+    
   },
   {
     label: "WhatsApp Redesign Project",
@@ -43,6 +44,12 @@ function CardShows() {
   const toProject = () => {
     navigate("/Projects");
   };
+  const toWhatsApp=()=>{
+    navigate("/Projects/WhatsApp");
+  }
+
+
+
   console.log(Story);
   // maybe use imagelist? or something with same style
   // const cardsDeck = [CardWhatsApp, CardWhatsApp];
@@ -71,14 +78,18 @@ function CardShows() {
           onChangeIndex={handleStep}
           enableMouseEvents
         >
+          
           {cardsDeck.map((card, index) => (
             <div key={index}>
               <Card
+                
                 onClick={toProject}
+                
                 sx={{ maxWidth: "100%", background: "#ffffff" }}
               >
                 <CardActionArea>
-                  <CardMedia
+                  <CardMedia 
+                    
                     sx={{ maxWidth: "100%" }}
                     component="img"
                     height=""
@@ -86,6 +97,7 @@ function CardShows() {
                     alt={card.alt}
                   />
                   <CardContent>
+                    
                     <Typography gutterBottom variant="h5" component="div">
                       {card.label}
                     </Typography>
