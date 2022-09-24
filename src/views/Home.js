@@ -58,6 +58,7 @@ function HomeView(props) {
             display: "flex",
             ml:"15%",
             
+            
             flexFlow: "row wrap",
             justifyContent: "space-evenly",
             alignContent: "flex-start",

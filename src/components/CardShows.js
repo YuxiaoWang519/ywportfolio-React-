@@ -22,6 +22,8 @@ import { Button } from "@mui/material";
 import Chat01 from "../Images/Chat01.png";
 import { useNavigate } from "react-router";
 import SliderWhatsApp from "../SliderImg/SliderWhatsApp.png";
+import LoginSquare from "../Nangang/loginSquare.png"
+import HomeSquare from "../WechatMIni/Home01Square.jpg"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const cardsDeck = [
   {
@@ -32,11 +34,17 @@ const cardsDeck = [
     
   },
   {
-    label: "WhatsApp Redesign Project",
-    src: SliderWhatsApp,
+    label: "NanGang Inventory Managing App",
+    src: LoginSquare,
     alt: "Story",
     text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
   },
+  {
+    label: "WeChat mini project for University Anniversary",
+    src: HomeSquare,
+    alt: "Story",
+    text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
+  }
 ];
 
 function CardShows() {
@@ -70,7 +78,7 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "70vw", flexGrow: 1 }}>
+      <Box sx={{ maxWidth: "70vw",flexGrow: 1 }}>
         <AutoPlaySwipeableViews
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -90,7 +98,7 @@ function CardShows() {
                 <CardActionArea>
                   <CardMedia 
                     
-                    sx={{ maxWidth: "100%" }}
+                    sx={{ maxWidth: "100%" ,maxHeight:"70vh"}}
                     component="img"
                     height=""
                     image={card.src}
