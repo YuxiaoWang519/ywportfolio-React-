@@ -37,13 +37,13 @@ const cardsDeck = [
     label: "NanGang Inventory Managing App",
     src: LoginSquare,
     alt: "Story",
-    text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
+    text: "NanGang Inventory Managing App helped medical worker from logistical nightmares",
   },
   {
     label: "WeChat mini project for University Anniversary",
     src: HomeSquare,
     alt: "Story",
-    text: "WhatsApp redesign project aimed to improve its user experience, madeutility changes and new functions.",
+    text: "A mini project for the university annivarsary",
   }
 ];
 
@@ -78,13 +78,15 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "70vw",flexGrow: 1 }}>
+      <Box sx={{ maxWidth: "70vw",flexGrow: 1, height:"max-content",  }}>
         <AutoPlaySwipeableViews
+        sx={{ height:"max-content" }}
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={activeStep}
           onChangeIndex={handleStep}
           enableMouseEvents
+          
         >
           
           {cardsDeck.map((card, index) => (
@@ -93,12 +95,12 @@ function CardShows() {
                 
                 onClick={toProject}
                 
-                sx={{ maxWidth: "100%", background: "#ffffff" }}
+                sx={{ maxWidth: "100%", background: "#ffffff", height:"70vh" }}
               >
                 <CardActionArea>
                   <CardMedia 
                     
-                    sx={{ maxWidth: "100%" ,maxHeight:"70vh"}}
+                    sx={{ maxWidth: "100%" ,maxHeight:"60vh"}}
                     component="img"
                     height=""
                     image={card.src}
@@ -156,12 +158,16 @@ function CardShows() {
       <MobileStepper
         variant="dots"
         sx={{
+          
           bgcolor: "black",
           opacity: "80%",
           width: "90vw  ",
           "& .MuiMobileStepper-dotActive": {
-            bgcolor: "bisque",
+            bgcolor: "bisque !important",
           },
+          "	.MuiMobileStepper-dot" :{
+            bgcolor:"green"
+          }
         }}
         steps={maxSteps}
         position="static"

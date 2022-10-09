@@ -17,10 +17,20 @@
   width:  80%;
   
 }
-.contactHover :hover {
+.contactHover :hover , .contactHover :hover * {
   background: #dbdad9;
   border-radius: 30px;
   cursor: pointer;
   color: black;
+  
+  
+  
+}
+
+
+
+@media screen and(max-width:799 ) {
+
+  
   
 }

@@ -57,6 +57,7 @@ function HomeView(props) {
             width: "70%",
             display: "flex",
             ml:"15%",
+      
             
             
             flexFlow: "row wrap",

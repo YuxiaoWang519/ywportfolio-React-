@@ -54,7 +54,7 @@ function YWFooter() {
                   <Avatar>
                     <EmailIcon></EmailIcon>
                   </Avatar>
-                  <Typography  sx={{color:"#d6d4d4", fontSize: "30px", ml: "1%" }}>
+                  <Typography  sx={{color:"#d6d4d4", fontSize: "3vw", ml: "1%" }}>
                     wangyuxiao519@live.com
                   </Typography>
                 </Stack>
@@ -66,7 +66,7 @@ function YWFooter() {
                   <Avatar>
                     <LocalPhoneIcon></LocalPhoneIcon>
                   </Avatar>
-                  <Typography sx={{ color:"#d6d4d4",fontSize: "30px", ml: "1%" }}>
+                  <Typography sx={{ color:"#d6d4d4",fontSize: "3vw", ml: "1%" }}>
                     +1 (416) 276-6784
                   </Typography>
                 </Stack>
@@ -74,7 +74,7 @@ function YWFooter() {
             </Tooltip>
           </Stack>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{color:"grey"}}>
           <p> &copy; Yuxiao Wang {date.toString()} </p>
         </Grid>
       </Grid>

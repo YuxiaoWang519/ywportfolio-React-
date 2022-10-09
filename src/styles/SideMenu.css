@@ -51,3 +51,18 @@
 .introBtn:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width:799px){
+  .introD{
+    color: white;
+    margin: auto;
+    /* width: 50%; */
+    height: 30vh;
+    padding-left: 5vw;
+    padding-top: 10vh;
+    font-size: 2vw;
+  }
+  .introBg{
+    height: 90vh !important;
+  }
+}
