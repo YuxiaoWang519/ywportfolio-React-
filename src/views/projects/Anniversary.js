@@ -4,7 +4,7 @@ import { Container, Grid, Stack, Avatar, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import SideMenu from "../../components/SideMenu";
 import YWFooter from "../YWFooter";
-import "../../styles/NanGang.css";
+import "../../styles/WhatsApp.css";
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
@@ -57,13 +57,13 @@ function Anniversary() {
         maxWidth="false"
         sx={{ Width: "100vw", px: "0", mx: "0",pt:"10vh", background: "#dadada" }}
       >
-        <Box sx={{ mx: "10vw", height: "80vh" }}>
+        <Box sx={{ mx: "10vw", height: "40vh" }}>
           <Grid container rowSpacing={5}>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={15}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <img className="imgFit" src={Home02} alt="Login page" />
-                  <div className="wIntro">
+                  <div className="miniIntro">
                     <h2>
                       <h1>Welcome </h1>
                        This WeChat mini program is built for the 70th Anniversary of HeiLongJiang Institute of Technology at the request of School 
@@ -80,7 +80,7 @@ function Anniversary() {
 
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack  direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <div className="Content">
                     <h2>
                       <h1>Progress Page</h1>
@@ -97,7 +97,7 @@ function Anniversary() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack  direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <img className="imgFit" src={news01} alt="chat page" />
                   <div className="Content">
                     <h2>
@@ -113,7 +113,7 @@ function Anniversary() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack  direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <div className="Content">
                     <h2>
                       <h1>Ranking</h1>
@@ -129,7 +129,7 @@ function Anniversary() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack  direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <img className="imgFit" src={setting01} alt="chat page" />
                   
                   <div className="Content">
@@ -148,7 +148,7 @@ function Anniversary() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack  direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <div className="contactContent">
                     <h2>
                       <h1>Setting --Profile</h1>
@@ -165,7 +165,7 @@ function Anniversary() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }}>
                   <img className="imgFit" src={stat01} alt="chat page" />
                   <div className="Content">
                     <h2>
