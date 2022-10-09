@@ -99,7 +99,7 @@ function NanGang() {
             </Typography>
           </CardContent>
         </Card>
-        <Button onClick={handleOpen}>See More</Button>
+        <Button sx={{zIndex:"1"}} onClick={handleOpen}>See More</Button>
 
       </Container>
       <Container
