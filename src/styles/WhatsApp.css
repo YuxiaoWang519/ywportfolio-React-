@@ -3,6 +3,7 @@
 
   justify-content: center;
   align-items: center;
+  font-size: 1.5vw;
 }
 .lChatContent {
   font-size: 2vh;
@@ -14,11 +15,14 @@
   display: flex;
 
   justify-content: center;
+  font-size: 1vw;
 }
 .imgFit {
-  max-height: 80vh;
+  max-height: 30vw;
   object-fit: cover;
   transition: all 1s ease;
+ 
+
 }
 .imgFit:hover {
   transform: scale(1.2, 1.2);
@@ -26,8 +30,8 @@
 .colorPicker {
   margin: 2vw;
   border-radius: 50%;
-  height: 10vh;
-  width: 10vh;
+  height: 5vw;
+  width: 5vw;
   transition: all 0.5s;
 }
 .colorPicker:hover {
@@ -46,4 +50,23 @@
 }
 .colorPicker04 {
   background-color: #d4e9e2;
+}
+
+@media screen and (max-width:600px){
+  
+  .imgFit {
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 1s ease;
+   
+  
+  }
+  .Content {
+    display: flex;
+  
+    justify-content: center;
+    font-size: 2vw;
+  }
+  
+
 }

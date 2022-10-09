@@ -55,38 +55,38 @@ function WhatsApp() {
       <Container
         disableGutters={true}
         maxWidth="false"
-        sx={{ Width: "100vw", px: "0", mx: "0",pt:"10vh", background: "#dadada" }}
+        sx={{ Width: "100vw", px: "0", mx: "0",pt:"10vh", background: "#dadada",height:"40vw" }}
       >
         <Box sx={{ mx: "10vw", height: "80vh" }}>
           <Grid container rowSpacing={5}>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={15}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Login} alt="Login page" />
                   <div className="wIntro">
                     <h2>
                       <h1>Welcome </h1>
-                      WhatsApp Redesign Project. It aimed to imporve overall
+                      WhatsApp Redesign Project. It aimed to improve overall
                       user experience. It is a group project made during
                       College. We redesigned the application in terms of visual
                       effect and functionality.
                     </h2>
                   </div>
                 </Stack>
-              </Box>
+              </Box>  
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={15}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <div className="Content">
                     <h2>
                       <h1>Color Scheme</h1>
                       We feel like the original color scheme is too cold and
-                      lack the ability to provide a comfortable enviroment for
+                      lack the ability to provide a comfortable environment for
                       users, therefore, we made changes to color scheme. We only
                       made minor changes due to the reason of branding. Instead
                       we focused on redesigning secondary colors, improving
-                      contast and provide a more comfortable experience.
+                      contrast and provide a more comfortable experience.
                     </h2>
                   </div>
                   {/* <img className="imgFit" src={Chat01} alt="Chat page 01" /> */}
@@ -102,7 +102,7 @@ function WhatsApp() {
 
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Chat01} alt="Chat page" />
                   <img className="imgFit" src={Chat02} alt="Chat page" />
 
@@ -126,7 +126,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <div className="Content">
                     <h2>
                       <h1>More Chats! </h1>
@@ -144,7 +144,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Chat03} alt="chat page" />
                   <div className="Content">
                     <h2>
@@ -162,7 +162,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <div className="Content">
                     <h2>
                       <h1>Contact </h1>
@@ -178,7 +178,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Contact02} alt="chat page" />
                   <img className="imgFit" src={Contact03} alt="chat page" />
                   <div className="Content">
@@ -205,11 +205,12 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
-                  <div className="contactContent">
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
+                  <div className="Content">
                     <h2>
                       <h1>Settings </h1>
                       <br></br>
+                     
                       Some changes were made to improve setting page as well. If
                       you compare it with the orignal verson, you will find out
                       that we have two more options here: "Categorize Contact"
@@ -229,7 +230,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={10}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Settings01} alt="chat page" />
                   <div className="Content">
                     <h2>
@@ -250,7 +251,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <div className="Content">
                     <h2>
                       <h1>Create Group </h1>
@@ -266,7 +267,7 @@ function WhatsApp() {
             </Grid>
             <Grid xs={12} item>
               <Box>
-                <Stack direction="row" spacing={30}>
+                <Stack direction={{xs: 'column', sm: 'row'  }}  spacing={{ xs: 1, sm: 2, md: 4 }} >
                   <img className="imgFit" src={Story02} alt="chat page" />
                   <div className="Content">
                     <h2>
