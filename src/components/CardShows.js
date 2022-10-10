@@ -78,9 +78,10 @@ function CardShows() {
   };
   return (
     <>
-      <Box sx={{ maxWidth: "70vw",flexGrow: 1, height:"max-content",  }}>
+      <Box sx={{ maxWidth: "70vw",flexGrow: 1, height:"max-content"}} >
         <AutoPlaySwipeableViews
-        sx={{ height:"max-content" }}
+          sx={{ height:"max-content"}}
+          
           interval={5000}
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={activeStep}
@@ -95,9 +96,9 @@ function CardShows() {
                 
                 onClick={toProject}
                 
-                sx={{ maxWidth: "100%", background: "#ffffff", height:"70vh" }}
+                sx={{ maxWidth: "100%", background: "#ffffff", height:"70vh"}}
               >
-                <CardActionArea>
+                <CardActionArea tabIndex={-1}>
                   <CardMedia 
                     
                     sx={{ maxWidth: "100%" ,maxHeight:"60vh"}}

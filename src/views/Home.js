@@ -39,7 +39,7 @@ function HomeView(props) {
     </div>
       <CssBaseline />
 
-      <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
+      <Container role="navigation" maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box>
           {/* <ElevationScroll {...props}> */}
           <SideMenu></SideMenu>
@@ -50,7 +50,7 @@ function HomeView(props) {
         </Box>
       </Container>
 
-      <Container maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
+      <Container role="main" maxWidth="false" disableGutters={true} sx={{ width: "100%" }}>
         <Box
           className="slideShow"
           sx={{
@@ -69,7 +69,7 @@ function HomeView(props) {
           <CardShows></CardShows>
         </Box>
       </Container>
-      <Container
+      <Container role="contentinfo"
         id="contactAnchor"
         maxWidth="false"
         disableGutters={true}
