@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ywportfolio-React-/static/css/main.abd84bb7.css",
-    "main.js": "/ywportfolio-React-/static/js/main.a67275ac.js",
+    "main.css": "/ywportfolio-React-/static/css/main.0ac3a9f7.css",
+    "main.js": "/ywportfolio-React-/static/js/main.66d6df6c.js",
     "static/media/NanGangShowcase.mp4": "/ywportfolio-React-/static/media/NanGangShowcase.1b1c3af30d88ed748b90.mp4",
     "static/media/BG01Grey.jpg": "/ywportfolio-React-/static/media/BG01Grey.c3f3ca1bffbf0204d7cd.jpg",
     "static/media/Home02.jpg": "/ywportfolio-React-/static/media/Home02.cd46033e4ff079aa6ec1.jpg",
@@ -73,11 +73,11 @@
     "static/media/SQL.jpg": "/ywportfolio-React-/static/media/SQL.f6b5a92e4d3ab079224f.jpg",
     "static/media/photoshop.jpg": "/ywportfolio-React-/static/media/photoshop.0ae7540aa58a39129f81.jpg",
     "index.html": "/ywportfolio-React-/index.html",
-    "main.abd84bb7.css.map": "/ywportfolio-React-/static/css/main.abd84bb7.css.map",
-    "main.a67275ac.js.map": "/ywportfolio-React-/static/js/main.a67275ac.js.map"
+    "main.0ac3a9f7.css.map": "/ywportfolio-React-/static/css/main.0ac3a9f7.css.map",
+    "main.66d6df6c.js.map": "/ywportfolio-React-/static/js/main.66d6df6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd84bb7.css",
-    "static/js/main.a67275ac.js"
+    "static/css/main.0ac3a9f7.css",
+    "static/js/main.66d6df6c.js"
   ]
 }
