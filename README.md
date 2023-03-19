@@ -7,7 +7,7 @@ npm i and then npm start
 to build ;
 npm build
 
-more: take a look into the 
+more: take a look into the package.json file, under script, there is a list of command you can run and you can customize or put new one in there
 
 
 
