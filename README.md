@@ -1,6 +1,14 @@
 
 This is a personal portfolio page in development. You can download and use this as a template for your own, however this is a work in progress project which bounds to have issues and parts that not comply with some best practice. Use it on your own risk.
 
+To run:
+npm i and then npm start
+
+to build ;
+npm build
+
+more: take a look into the 
+
 
 
 
